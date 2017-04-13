@@ -1,0 +1,123 @@
+﻿//QUAD
+
+#pragma strict
+ 
+ var prefab : GameObject;
+ 
+ var rows  = 10;
+ var cols  = 20;
+ var filling = false;
+ var color = Color.blue;
+ var wait = 0.1;
+ 
+ private var objects : Renderer[,];
+ 
+ function Start () {
+     objects = new Renderer[rows, cols];
+     
+     var pos = Vector3(-cols / 2.0, rows / 2.0, 0.0);
+     
+     for (var i = 0; i < rows; i++) {
+         for (var j = 0; j < cols; j++) {
+             var go = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
+             objects[i,j] = go.renderer;
+             pos.x += 1.0;
+         }
+         pos.y -= 1.0;
+         pos.x = -cols / 2.0;
+     }
+ }
+ 
+ function Update () {
+     if (Input.GetMouseButtonDown(0)) {
+         var hit : RaycastHit;
+         var ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+         if (Physics.Raycast(ray, hit) && hit.collider.tag == "FillTile") {
+             var rend = hit.transform.renderer;
+             for (var i = 0; i < rows; i++) {
+                  for (var j = 0; j < cols; j++) {
+                      if (rend == objects[i,j]) {
+                          FloodFillWithWait(color, wait, i, j);
+                          return;
+                      }
+                  }
+              }
+         }
+     }
+ }
+ 
+ function FloodFillWithWait(color : Color, wait : float, row : int, col : int) : IEnumerator {
+     objects[row, col].material.color = color;
+     
+     yield  WaitForSeconds(wait);
+     
+     if (row > 0 && objects[row-1, col].material.color != color) 
+         FloodFillWithWait(color, wait, row-1, col);
+     if (row < rows-1 && objects[row+1,col].material.color != color)
+         FloodFillWithWait(color, wait, row+1, col);
+     if (col > 0 && objects[row, col-1].material.color != color) 
+         FloodFillWithWait(color, wait, row, col-1);
+     if (col < cols-1 && objects[row,col+1].material.color != color)
+         FloodFillWithWait(color, wait, row, col+1);        
+ }
+
+ //------------------------------------------------------------
+ //GRID
+
+  //Representation of a grid cell
+ public class GridCell
+ {
+     public bool walkable;
+     public float height;
+ }
+ 
+ //Width and height of the map in cells
+   int width, height;
+ //Active map of the world
+   public GridCell[,] cells;
+ 
+ //Size in world units of a cell
+   public float cellSize = 0.5f;
+ 
+ //Scan the bounds of the model and create a grid
+     bounds = renderer.bounds;
+     //Work out the top left corner
+     topLeftCorner = bounds.center - bounds.extents + new Vector3(0, bounds.size.y, 0);
+     //Calculate the dimensions of the grid map
+     width = Mathf.RoundToInt(bounds.size.x / cellSize);
+     height = Mathf.RoundToInt(bounds.size.z / cellSize);
+     
+     //Create the grid map
+       cells = new GridCell[width, height];
+     
+     //Scan for walkable terrain in each cell
+     for(var x = 0; x < width; x ++)
+     {
+         for(var y = 0; y < height; y++)
+         {
+             
+     //Get the position for a ray
+          var currentPosition = topLeftCorner + new Vector3(x * cellSize, 0, y * cellSize);
+             RaycastHit hit;
+             
+     //Create a cell for the grid
+           var cell = new GridCell();
+           cells[x, y] = cell;
+             
+     //Cast the ray
+           if(Physics.Raycast(currentPosition, -Vector3.up, out hit, bounds.size.y))
+             {
+                 
+     //The height of the highest item in the cell
+                 cell.height = hit.point.y;
+                 
+     //Test if the thing we hit was walkable
+                 if(((1 << hit.collider.gameObject.layer) & walkableLayer) != 0)
+                 {
+                     //Flag the cell as walkable
+                     cell.walkable = true;
+                 }
+             }
+  
+         }
+     }
