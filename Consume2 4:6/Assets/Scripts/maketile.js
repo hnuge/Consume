@@ -3,22 +3,21 @@
 var prefab : GameObject;
 var cells : GameObject[,];
 
-public var rows : int;
-public var columns : int;
+public var rows : float;
+public var columns : float;
 
 
 
 function Start () {
-	cells = new GameObject[rows, columns];
+	cells = new GameObject[columns, rows];
 
-	var i : int;
-	var j : int;
-	for (i = 0; i < rows; i++)
+	var i : float;
+	var j : float;
+	for (i = 0; i < columns; i++)
 	{
-		for (j = 0; j < columns; j++)
+		for (j = 0; j < rows; j++)
 		{
-			cells[i,j] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
-			cells[i,j].GetComponent.<Renderer>().material.color = Color.red;
+			cells[i,j] = Instantiate(prefab, new Vector3(i+0.5, (-1)*j + -0.5, 0), Quaternion.identity);
 
 		}
 
@@ -27,4 +26,10 @@ function Start () {
 
 function Update () {
 	
+}
+
+
+function changeColor(row : int, column : int) //color : Color)
+{
+	//cells[row,column].GetComponent.<Renderer>().material.color = Color.color;
 }
