@@ -1,5 +1,6 @@
 ﻿
 #pragma strict
+//Nugent
 
 var prefab : GameObject;
 var cells : GameObject[,];
@@ -21,6 +22,7 @@ function Start () {
 			cells[i,j] = Instantiate(prefab, new Vector3(i+0.5, (-1)*j + -0.5, 0), Quaternion.identity);
 			cells[i,j].layer = 0;
 			addCollider(cells[i,j]);
+			cells[i,j].tag = "tile";
 
 		}
 
@@ -42,4 +44,15 @@ function addCollider(tile : GameObject)
 	// adds an IsTrigger box collider to each tile 
 	tile.AddComponent.<BoxCollider>();
 	tile.GetComponent.<Collider>().isTrigger = true;
+}
+
+function OnTriggerEnter2D(hit : Collider2D)
+{
+	print("yp");
+	if (hit.gameObject.tag == "player_square")
+	{
+		print("hit");
+	}
+
+
 }
