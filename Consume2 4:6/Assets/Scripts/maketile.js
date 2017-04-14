@@ -25,11 +25,11 @@ function Start () {
 }
 
 function Update () {
-	
+
 }
 
 
-function changeColor(row : int, column : int) //color : Color)
+function changeColor(row : int, column : int, shade : UnityEngine.Color) //color : Color)
 {
-	//cells[row,column].GetComponent.<Renderer>().material.color = Color.color;
+	cells[row,column].GetComponent.<Renderer>().material.color = shade;
 }
