@@ -18,6 +18,7 @@ function Start () {
 		for (j = 0; j < rows; j++)
 		{
 			cells[i,j] = Instantiate(prefab, new Vector3(i+0.5, (-1)*j + -0.5, 0), Quaternion.identity);
+			cells[i,j].layer = 0;
 
 		}
 

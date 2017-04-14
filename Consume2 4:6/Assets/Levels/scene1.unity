@@ -108,6 +108,52 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &281239344
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1290430640078728, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &606514840
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 606514842}
   - component: {fileID: 606514841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: maketile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
