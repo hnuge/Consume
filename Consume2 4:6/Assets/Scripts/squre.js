@@ -53,30 +53,6 @@ function Update () {
 	currKey = lastKey;
 }
 
-
-function MoveUp()
-{
-	
-	print(Time.time);
-	yield WaitForSeconds(500000);
-	print(Time.time);
-}
-
-function MoveDown()
-{
-
-}
-
-function MoveLeft()
-{
-
-}
-
-function MoveRight()
-{
-
-}
-
 function OnTriggerEnter2D(hit : Collider2D)
 {
 	if (hit.gameObject.tag == "home")
