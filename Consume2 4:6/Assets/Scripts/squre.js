@@ -10,8 +10,8 @@ public var tileScript : maketile;	//access maketile script
 var array = new Array();
 
 var cells : GameObject[,];
-var columns = tileScript.columns;
-var rows = tileScript.rows;
+var columns : int = 16;
+var rows : int = 10;
 
 function Start () {
 	currKey = "start";
@@ -24,7 +24,7 @@ function Start () {
 		for (j = 0; j < rows; j++)
 		{
 			cells[i,j] = tileScript.cells[i,j];
-			print(i);
+			print("poop");
 		}
 
 	}
@@ -68,12 +68,36 @@ function Update () {
 
 	currKey = lastKey;
 
-	// access tiles?
+	/*----------
+	 	make tail
+	--------------*/
 	var pos : Vector3 = square.transform.position;
-	var x : int = pos.x + .5;
-	var y : int = pos.y - .5;
-
-	tileScript.changeColor(1, 1, Color.blue);
+	var x : int = pos.x;
+	var y : int = pos.y;
+	if (currKey != "start")
+	{
+		if (currKey == "right")
+		{
+			x = x - .5;
+			y = (y - .5) * (-1);		// * -1 to keep index in range
+		}
+		if (currKey == "left")
+		{
+			x = x + .5;
+			y = (y - .5) * (-1);		// * -1 to keep index in range
+		}
+		if (currKey == "down")
+		{
+			x = x + .5;
+			y = (y - .5) * (-1);		// * -1 to keep index in range
+		}
+		if (currKey == "up")
+		{
+			x = x + .5;
+			y = (y - 1.5) * (-1);
+		}
+		tileScript.changeColor(x, y, Color.gray);
+	}
 }
 
 function OnTriggerEnter2D(hit : Collider2D)
