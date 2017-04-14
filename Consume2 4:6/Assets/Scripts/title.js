@@ -26,7 +26,7 @@ function StartPrompt () {
 
 	if (GUI.Button(Rect(halfPromptW-(buttonW/2), (halfPromptH-(buttonH/2))/.7, buttonW, buttonH), "Start Game"))
 	{
-		Application.LoadLevel("level1");
+		Application.LoadLevel("screen1");
 	}
 	GUI.EndGroup();
 }

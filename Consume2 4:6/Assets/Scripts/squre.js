@@ -75,7 +75,6 @@ function Update () {
 	var x : int = pos.x;
 	var y : int = pos.y;
 	if (currKey != "start")
-	{
 		if (currKey == "right")
 		{
 			x = x - .5;
@@ -96,14 +95,19 @@ function Update () {
 			x = x + .5;
 			y = (y - 1.5) * (-1);
 		}
-		tileScript.changeColor(x, y, Color.gray);
-	}
+	tileScript.changeColor(x, y, Color.gray);
 }
 
 function OnTriggerEnter2D(hit : Collider2D)
 {
 	if (hit.gameObject.tag == "home")
 	{
+		print(array);
+		var i : int = 0;
+		for (i = 0; i < array.length; i++)
+		{
+			var point : Vector3 = array.Pop();
+		}
 		array.length = 0; 	// clearing array
 	}
 
