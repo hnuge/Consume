@@ -117,11 +117,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 2.55
       objectReference: {fileID: 0}
     - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -5.58
       objectReference: {fileID: 0}
     - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -146,6 +146,26 @@ Prefab:
     - target: {fileID: 4529293559739194, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 96331495960641836, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96331495960641836, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96331495960641836, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96331495960641836, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
