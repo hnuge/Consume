@@ -152,6 +152,21 @@ Prefab:
       propertyPath: tileScript
       value: 
       objectReference: {fileID: 606514841}
+    - target: {fileID: 212958574227105940, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.46274513
+      objectReference: {fileID: 0}
+    - target: {fileID: 212958574227105940, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.8431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 212958574227105940, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.9176471
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0
@@ -337,17 +352,17 @@ Prefab:
     - target: {fileID: 212291257123884002, guid: 28c7417c8aa4346cfba4a250a491cebb,
         type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: 0.46274513
       objectReference: {fileID: 0}
     - target: {fileID: 212291257123884002, guid: 28c7417c8aa4346cfba4a250a491cebb,
         type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: 0.8431373
       objectReference: {fileID: 0}
     - target: {fileID: 212291257123884002, guid: 28c7417c8aa4346cfba4a250a491cebb,
         type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.9176471
       objectReference: {fileID: 0}
     - target: {fileID: 212291257123884002, guid: 28c7417c8aa4346cfba4a250a491cebb,
         type: 2}

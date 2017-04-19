@@ -95,7 +95,7 @@ function Update () {
 			x = x + .5;
 			y = (y - 1.5) * (-1);
 		}
-	tileScript.changeColor(x, y, Color.gray);
+	tileScript.changeColor(x, y, Color(202.0/255.0,242.0/255.0,249.0/255.0, 1));
 }
 
 function OnTriggerEnter2D(hit : Collider2D)
