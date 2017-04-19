@@ -36,7 +36,7 @@ function Update () {
 
 function changeColor(row : int, column : int, shade : UnityEngine.Color) //color : Color)
 {
-	cells[row,column].GetComponent.<Renderer>().material.color = shade;
+//	cells[row,column].GetComponent.<Renderer>().material.color = shade;
 }
 
 function addCollider(tile : GameObject)

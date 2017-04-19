@@ -1,6 +1,9 @@
 ﻿#pragma strict
 //consume
 
+var style:GUIStyle;
+
+
 function Start () {
 }
 
@@ -21,12 +24,15 @@ function StartPrompt () {
 
 	GUI.BeginGroup(Rect(halfScreenW-halfPromptW, halfScreenH-halfPromptH, winPromptW, winPromptH));
 	//GUI.Box(Rect(0,0,winPromptW, winPromptH), "Click below to play.");
-	var buttonW:int = 100;
-	var buttonH:int = 20;
+	var buttonW:int = 800;
+	var buttonH:int = 400;
 
-	if (GUI.Button(Rect(halfPromptW-(buttonW/2), (halfPromptH-(buttonH/2))/.7, buttonW, buttonH), "Start Game"))
+	GUI.skin.button = style;
+
+
+	if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2)/3, buttonW, buttonH), ""))
 	{
-		Application.LoadLevel("screen1");
+		Application.LoadLevel("scene1");
 	}
 	GUI.EndGroup();
 }
