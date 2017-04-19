@@ -19,5 +19,5 @@ function Update () {
 
 function makeHome(tile : GameObject, home : GameObject)
 {
-	tile = Instantiate(prefab, new Vector3(i+0.5, (-1)*j + -0.5, 0), Quaternion.identity);
+//	tile = Instantiate(prefab, new Vector3(i+0.5, (-1)*j + -0.5, 0), Quaternion.identity);
 }

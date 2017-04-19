@@ -7,6 +7,7 @@ TagManager:
   - player_square
   - home
   - tile
+  - enemy
   layers:
   - Default
   - TransparentFX

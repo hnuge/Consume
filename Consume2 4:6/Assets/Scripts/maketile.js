@@ -51,5 +51,10 @@ function addCollider(tile : GameObject)
 function OnTriggerEnter2D(hit : Collider2D)
 {
 
+	//print("yp");
+	if (hit.gameObject.tag == "player_square")
+	{
+		print("hit");
+	}
 
 }

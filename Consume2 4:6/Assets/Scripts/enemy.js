@@ -3,10 +3,16 @@
 
 var dist:float;
 var dir:int;
+public var score:int;
+public var text:GUIText;
+
 var count:int;
+
+var hits:int;
 
 function Start () {
 	count = 0;
+	score = 0;
 }
 
 function Update () {
@@ -52,7 +58,12 @@ function Update () {
 	}
 }
 
-function wait()
+function OnTriggerEnter2D(hit : Collider2D)
 {
-	yield WaitForSeconds(5); 
+	if (hit.gameObject.tag == "player_square")
+	{
+		print("yo");
+		//score++;
+	}
+
 }
