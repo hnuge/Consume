@@ -1,12 +1,14 @@
 ﻿#pragma strict
 
 var square:GameObject;
+var home:GameObject;
+
 var lastKey:String;
 var currKey:String;
 var goalTime : float;
 var speed : float = 0.25;
-public var tileScript : maketile;	//access maketile script
-  
+public var ts : tilescript; // 	//access maketile script
+public var bs : GameObject = home.GetComponent.(basescript).home;	//access home base script
 
 
 var array = new Array();
@@ -16,6 +18,12 @@ var columns : int = 16;
 var rows : int = 10;
 
 function Start () {
+	//bs = GetComponent(bs); 
+	//targetObject.GetComponent(LogicCableSupport).onLogicInput();
+
+
+
+	print(bs.rows);
 	currKey = "start";
 	goalTime = Time.time;
 	cells = new GameObject[columns, rows];
@@ -118,7 +126,8 @@ function OnTriggerEnter2D(hit : Collider2D)
 	*/
 	if (hit.gameObject.tag == "tile")
 	{
-		
+		//print("hit");
+		//bs.makeHome(square.transform.position);
 	}
 
 }

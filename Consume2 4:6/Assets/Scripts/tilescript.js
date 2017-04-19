@@ -50,11 +50,15 @@ function addCollider(tile : GameObject)
 
 function OnTriggerEnter2D(hit : Collider2D)
 {
+<<<<<<< HEAD:Consume2 4:6/Assets/Scripts/maketile.js
 
 	//print("yp");
 	if (hit.gameObject.tag == "player_square")
 	{
 		print("hit");
 	}
+=======
+	
+>>>>>>> origin/master:Consume2 4:6/Assets/Scripts/tilescript.js
 
 }
