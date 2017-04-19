@@ -6,6 +6,8 @@ var currKey:String;
 var goalTime : float;
 var speed : float = 0.25;
 public var tileScript : maketile;	//access maketile script
+  
+
 
 var array = new Array();
 
@@ -19,15 +21,17 @@ function Start () {
 	cells = new GameObject[columns, rows];
 	var i : float;
 	var j : float;
-	for (i = 0; i < columns; i++)
+/*	for (i = 0; i < columns; i++)
 	{
 		for (j = 0; j < rows; j++)
 		{
+			print(tileScript.rows);
 			cells[i,j] = tileScript.cells[i,j];
-			print("poop");
+
+			//tileScript.addCollider(cells[i,j]);
 		}
 
-	}
+	} */
 
 }
 
@@ -70,7 +74,7 @@ function Update () {
 
 	/*----------
 	 	make tail
-	--------------*/
+	--------------
 	var pos : Vector3 = square.transform.position;
 	var x : int = pos.x;
 	var y : int = pos.y;
@@ -95,11 +99,12 @@ function Update () {
 			x = x + .5;
 			y = (y - 1.5) * (-1);
 		}
-	tileScript.changeColor(x, y, Color(202.0/255.0,242.0/255.0,249.0/255.0, 1));
+	//tileScript.changeColor(x, y, Color(202.0/255.0,242.0/255.0,249.0/255.0, 1)); */
 }
 
 function OnTriggerEnter2D(hit : Collider2D)
 {
+/*	print("trigger");
 	if (hit.gameObject.tag == "home")
 	{
 		print(array);
@@ -110,7 +115,7 @@ function OnTriggerEnter2D(hit : Collider2D)
 		}
 		array.length = 0; 	// clearing array
 	}
-
+	*/
 	if (hit.gameObject.tag == "tile")
 	{
 		print("poop");
