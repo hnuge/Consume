@@ -219,6 +219,7 @@ MonoBehaviour:
   goalTime: 0
   speed: 0.25
   tileScript: {fileID: 0}
+  baseScript: {fileID: 0}
   columns: 16
   rows: 10
 --- !u!212 &212958574227105940

@@ -50,6 +50,6 @@ function addCollider(tile : GameObject)
 
 function OnTriggerEnter2D(hit : Collider2D)
 {
-
+	
 
 }

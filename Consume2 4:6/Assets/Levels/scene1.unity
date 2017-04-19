@@ -152,6 +152,26 @@ Prefab:
       propertyPath: tileScript
       value: 
       objectReference: {fileID: 606514841}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: baseScript
+      value: 
+      objectReference: {fileID: 1675841244}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: home
+      value: 
+      objectReference: {fileID: 1675841243}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: ts
+      value: 
+      objectReference: {fileID: 606514841}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: bs
+      value: 
+      objectReference: {fileID: 1675841244}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0
@@ -389,7 +409,7 @@ MonoBehaviour:
   prefab: {fileID: 1792045384143992, guid: 28c7417c8aa4346cfba4a250a491cebb, type: 2}
   rows: 10
   columns: 16
-  tileScript: {fileID: 0}
+  tileScript: {fileID: 606514841}
 --- !u!1 &1973725760
 GameObject:
   m_ObjectHideFlags: 0
