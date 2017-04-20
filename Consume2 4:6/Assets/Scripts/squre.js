@@ -25,17 +25,7 @@ function Start () {
 	cells = new GameObject[columns, rows];
 	var i : float;
 	var j : float;
-/*	for (i = 0; i < columns; i++)
-	{
-		for (j = 0; j < rows; j++)
-		{
-			print(tileScript.rows);
-			cells[i,j] = tileScript.cells[i,j];
 
-			//tileScript.addCollider(cells[i,j]);
-		}
-
-	} */
 
 }
 
@@ -80,34 +70,6 @@ function Update () {
 		currKey = lastKey;
 	}
 
-	/*----------
-	 	make tail
-	--------------
-	var pos : Vector3 = square.transform.position;
-	var x : int = pos.x;
-	var y : int = pos.y;
-	if (currKey != "start")
-		if (currKey == "right")
-		{
-			x = x - .5;
-			y = (y - .5) * (-1);		// * -1 to keep index in range
-		}
-		if (currKey == "left")
-		{
-			x = x + .5;
-			y = (y - .5) * (-1);		// * -1 to keep index in range
-		}
-		if (currKey == "down")
-		{
-			x = x + .5;
-			y = (y - .5) * (-1);		// * -1 to keep index in range
-		}
-		if (currKey == "up")
-		{
-			x = x + .5;
-			y = (y - 1.5) * (-1);
-		}
-	//tileScript.changeColor(x, y, Color(202.0/255.0,242.0/255.0,249.0/255.0, 1)); */
 }
 
 function OnTriggerEnter2D(hit : Collider2D)
@@ -115,7 +77,6 @@ function OnTriggerEnter2D(hit : Collider2D)
 
 	if (hit.gameObject.tag == "tile")
 	{
-		//print("hit");
 		bs.makeHome(square.transform.position);
 	}
 
