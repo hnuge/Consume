@@ -80,12 +80,14 @@ function OnTriggerEnter2D(hit : Collider2D)
 		bs.makeHome(square.transform.position);
 	}
 
+	if (hit.gameObject.tag == "wall")
+	{
+		print("hit wall");
+	}
+
 }
 
-function OnCollisionEnter2D(coll: Collision2D) {
-    if (coll.gameObject.tag == "wall")
-        print("hit wall");
-}
+
 
 function turnCorners()
 {
