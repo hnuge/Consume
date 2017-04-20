@@ -9,6 +9,7 @@ TagManager:
   - tile
   - enemy
   - enemy_base
+  - wall
   layers:
   - Default
   - TransparentFX
