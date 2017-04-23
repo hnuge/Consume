@@ -8,6 +8,8 @@ var currKey:String;
 var count : int;
 public var ts : tilescript; // 	//access maketile script
 public var bs : basescript;	//access home base script
+var startX : float;
+var startY : float;
 
 
 var array = new Array();
@@ -25,7 +27,6 @@ function Start () {
 	cells = new GameObject[columns, rows];
 	var i : float;
 	var j : float;
-
 
 }
 
@@ -84,7 +85,12 @@ function OnTriggerEnter2D(hit : Collider2D)
 	{
 		print("hit wall");
 	}
-
+	if (hit.gameObject.tag == "enemy")
+	{
+		print("hit enemy");
+		transform.position.x = startX;
+		transform.position.y = startY;
+	}
 }
 
 
