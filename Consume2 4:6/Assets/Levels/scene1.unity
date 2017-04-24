@@ -193,6 +193,26 @@ Prefab:
       propertyPath: startY
       value: -5.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: rightWall
+      value: 15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: leftWall
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: upWall
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: downWall
+      value: -9.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0

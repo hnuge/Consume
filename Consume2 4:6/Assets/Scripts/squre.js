@@ -10,6 +10,10 @@ public var ts : tilescript; // 	//access maketile script
 public var bs : basescript;	//access home base script
 var startX : float;
 var startY : float;
+var rightWall : float;
+var leftWall : float;
+var upWall : float;
+var downWall : float;
 
 
 var array = new Array();
@@ -67,19 +71,20 @@ function Update () {
 		/* --------------------
 		 	wall
 		 ---------------------*/
-		if (move.x == -0.5)
+		if (move.x < leftWall)
 		{
 			move.x = move.x+1;
 		}
-		if (move.x == 16.5)
+		if (move.x > rightWall)
 		{
+			print("AAAAAAAA");
 			move.x = move.x-1;
 		}
-		if (move.y == .5)
+		if (move.y > upWall)
 		{
 			move.y = move.y-1;
 		}
-		if (move.y == -10.5)
+		if (move.y < downWall)
 		{
 			move.y = move.y+1;
 		}
