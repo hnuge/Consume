@@ -1,14 +1,33 @@
 ﻿#pragma strict
 
-var coin : GameObject;
+
+
+function Start () 
+{
+
+
+}
+
+function Update () 
+{
+	
+}
+
+
+
+
+
+
+
+
+
+/*
+	var coin : GameObject;
 var numcoins : int;
 var c : GameObject[];
 
 
 public var ts : tilescript;  	//access maketile script
-
-function Start () 
-{
 	c = new GameObject[ts.columns * ts.rows];
 	var x : int;
 	var y : int;
@@ -22,9 +41,4 @@ function Start ()
 
 	}
 
-}
-
-function Update () 
-{
-	
-}
+	*/
