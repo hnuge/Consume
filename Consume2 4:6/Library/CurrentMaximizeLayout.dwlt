@@ -18,12 +18,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1280
-    height: 701
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+    width: 1276
+    height: 705
+  m_MinSize: {x: 683, y: 342}
+  m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 4809
+  controlID: 8799
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,23 +46,22 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
     x: 248
     y: 94
-    width: 745
-    height: 403
+    width: 748
+    height: 405
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 04000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -308.80002
-    m_HBaseRangeMax: 308.80002
-    m_VBaseRangeMin: -193
-    m_VBaseRangeMax: 193
+    m_HBaseRangeMin: -374
+    m_HBaseRangeMax: 374
+    m_VBaseRangeMin: -194
+    m_VBaseRangeMax: 194
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -79,40 +78,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 745
-      height: 386
+      width: 748
+      height: 388
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 372.5, y: 193}
+    m_Translation: {x: 374, y: 194}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -372.5
-      y: -193
-      width: 745
-      height: 386
+      x: -374
+      y: -194
+      width: 748
+      height: 388
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 745, y: 403}
+  m_LastWindowPixelSize: {x: 748, y: 405}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
 --- !u!114 &3
-=======
-    x: 0
-    y: 30
-    width: 1276
-    height: 759
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
-  vertical: 0
-  controlID: 47
---- !u!114 &7
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -130,18 +118,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 997
-    height: 701
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+    width: 999
+    height: 705
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-  controlID: 4810
+  controlID: 8800
 --- !u!114 &4
-=======
-  controlID: 48
---- !u!114 &8
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -159,18 +142,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 997
-    height: 424
+    width: 999
+    height: 426
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-  controlID: 4765
+  controlID: 8753
 --- !u!114 &5
-=======
-  controlID: 49
---- !u!114 &9
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -186,73 +164,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-    width: 248
-    height: 424
+    width: 247
+    height: 426
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 6}
-=======
-    width: 253
-    height: 466
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 253
-    y: 0
-    width: 746
-    height: 466
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  - {fileID: 13}
-  - {fileID: 17}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 466
-    width: 999
-    height: 293
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 19}
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
   m_Panes:
   - {fileID: 6}
   m_Selected: 0
@@ -279,19 +195,15 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: -2
+    x: -1
     y: 94
-    width: 246
-    height: 403
+    width: 245
+    height: 405
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-    m_ExpandedIDs: 16fdfdffe2fbffff00000000
-=======
-    m_ExpandedIDs: e4fbffff00000000
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
+    m_SelectedIDs: 9c55f8ff
+    m_LastClickedID: -502372
+    m_ExpandedIDs: 4e56f8ff1858f8ff8c59f8ff0c9cf8ff0abaf8ffc2e1f8ffe2e3f8ffa4edf8fff2f6f8ff6eb1f9ff10b5f9ff76c6f9ffaac7f9ffd8c8f9ff14caf9ffc2caf9ff2ad4f9ff62e9f9ff8a03faff6c59faffde5afaff4c64faff7878faff2e01fbffc601fbff5024fbff102dfbff56d0fbff4ce1fbff5002fcffc2cfffff9afaffffe2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -307,10 +219,9 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
-  m_ExpandedScenes:
-  - scene1
+  m_ExpandedScenes: []
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -328,132 +239,20 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-    x: 248
+    x: 247
     y: 0
-    width: 749
-    height: 424
+    width: 752
+    height: 426
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
-  - {fileID: 9}
   - {fileID: 2}
-  m_Selected: 2
+  - {fileID: 9}
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &8
-=======
-    x: 4
-    y: 94
-    width: 227
-    height: 410
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_VersionControlStates: []
-    m_ReferencingInstanceIDs: 
-    m_ScenePaths: []
-    m_ShowAllHits: 0
-    m_SearchArea: 0
-    m_Folders: []
-  m_ViewMode: 0
-  m_StartGridSize: 64
-  m_LastFolders: []
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/Mary/Documents/Game Design/Consume
-  m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a2a0000
-    m_LastClickedID: 10842
-    m_ExpandedIDs: 00000000aa240000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa240000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 0000000090e7ffff
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
-  m_DirectoriesAreaWidth: 122.5
---- !u!114 &16
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -477,23 +276,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 248
     y: 94
-    width: 745
-    height: 403
+    width: 748
+    height: 405
   m_SceneLighting: 1
   lastFramingTime: 0
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-    m_Target: {x: 0.14869447, y: -1.3437023, z: 0}
+    m_Target: {x: 9.002562, y: -4.3281546, z: 0}
     speed: 2
-    m_Value: {x: 0.14869447, y: -1.3437023, z: 0}
-=======
-    m_Target: {x: 7.417822, y: -4.934495, z: 0}
-    speed: 2
-    m_Value: {x: 7.417822, y: -4.934495, z: 0}
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
+    m_Value: {x: 9.002562, y: -4.3281546, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -520,9 +313,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.912251
+    m_Target: 21.471844
     speed: 2
-    m_Value: 15.912251
+    m_Value: 21.471844
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -555,10 +348,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 248
-    y: 94
-    width: 745
-    height: 403
+    x: 468
+    y: 181
+    width: 973
+    height: 501
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -574,17 +367,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 424
-    width: 997
-    height: 277
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 11}
+    y: 426
+    width: 999
+    height: 279
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 11}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -607,10 +400,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: -2
-    y: 518
-    width: 995
-    height: 256
+    x: -1
+    y: 520
+    width: 997
+    height: 258
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -628,19 +421,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Levels
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/Mary/Documents/Game Design/ConsumeGame/Consume2 4:6
+  m_LastProjectPath: /Users/Haley_Nugent/Desktop/Consume/Consume2 4:6
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-    m_SelectedIDs: 38250000
-    m_LastClickedID: 9528
-    m_ExpandedIDs: 00000000ac2400000c25000000ca9a3bffffff7f
-=======
-    m_SelectedIDs: 36250000
-    m_LastClickedID: 9526
-    m_ExpandedIDs: 00000000aa24000000ca9a3bffffff7f
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
+    m_SelectedIDs: 52250000
+    m_LastClickedID: 9554
+    m_ExpandedIDs: 00000000b02400001a25000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,11 +455,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-    m_ExpandedIDs: 00000000ac2400000c25000000ca9a3bffffff7f
-=======
-    m_ExpandedIDs: 00000000aa240000
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
+    m_ExpandedIDs: 00000000b02400001a25000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -700,11 +483,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-<<<<<<< Updated upstream:REAL CONSUME/Library/CurrentMaximizeLayout.dwlt
-    m_ExpandedInstanceIDs: 00000000
-=======
-    m_ExpandedInstanceIDs: 3e330000c059ffff222400007024000000000000f8240000362b00001e2cffffa4ccfeff90e7ffff544d0000e8280000
->>>>>>> Stashed changes:Consume2 4:6/Library/CurrentLayout.dwlt
+    m_ExpandedInstanceIDs: 88350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -753,10 +532,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: -2
-    y: 518
-    width: 995
-    height: 256
+    x: -1
+    y: 520
+    width: 997
+    height: 258
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -771,10 +550,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 997
+    x: 999
     y: 0
-    width: 283
-    height: 701
+    width: 277
+    height: 705
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -804,10 +583,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 997
+    x: 1000
     y: 94
-    width: 281
-    height: 680
+    width: 275
+    height: 684
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
