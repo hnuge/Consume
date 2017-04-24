@@ -152,6 +152,10 @@ Prefab:
       propertyPath: ts
       value: 
       objectReference: {fileID: 918906892}
+    - target: {fileID: 1388065813308632, guid: b69c18d79a31e420d872afee42c844a5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b69c18d79a31e420d872afee42c844a5, type: 2}
   m_IsPrefabParent: 0
@@ -316,7 +320,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -480,6 +484,11 @@ Prefab:
       propertyPath: bs
       value: 
       objectReference: {fileID: 1253418952}
+    - target: {fileID: 61335576889573238, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0
@@ -540,6 +549,10 @@ Prefab:
     - target: {fileID: 212928770201804210, guid: 631bbffbf069040b6a6b67deb3bfc81c,
         type: 2}
       propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365809229743278, guid: 631bbffbf069040b6a6b67deb3bfc81c, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

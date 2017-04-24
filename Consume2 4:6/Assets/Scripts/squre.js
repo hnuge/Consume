@@ -36,16 +36,7 @@ function Update () {
 		Square moves exactly one length of itself
 	-----------------------------------------*/
 	var move : Vector3 = transform.position;
-	print(move);
-	//if(transform.position.x + move.x * speed * Time.deltaTime > 11.2)   //right wall
-		//move.x = 0;
-	//if(transform.position.x + move.x * speed * Time.deltaTime < -11.2)  //left wall
-		//move.x = 0;
-	//if(transform.position.z + move.z * speed * Time.deltaTime > 7.6)
-		//move.z = 0;
-	//if(transform.position.z + move.z * speed * Time.deltaTime < -7.6)
-		//move.z = 0;
-	//transform.position += 1.5 * move * speed * Time.deltaTime;
+
 	count++;
 	if(count >= 7)
 	{
@@ -73,9 +64,24 @@ function Update () {
 			move.x += 1;
 			count = 0;
 		}
-		if ((move.x == 0) || (move.x == 16))
+		/* --------------------
+		 	wall
+		 ---------------------*/
+		if (move.x == -0.5)
 		{
-			move.x = 0;
+			move.x = move.x+1;
+		}
+		if (move.x == 16.5)
+		{
+			move.x = move.x-1;
+		}
+		if (move.y == .5)
+		{
+			move.y = move.y-1;
+		}
+		if (move.y == -10.5)
+		{
+			move.y = move.y+1;
 		}
 	
 		if (lastKey != currKey)
