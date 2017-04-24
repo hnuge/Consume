@@ -106,7 +106,7 @@ function OnTriggerEnter2D(hit : Collider2D)
 
 	if (hit.gameObject.tag == "coin")
 	{
-		AddMoney(coinCount);
+		AddMoney(coinCount++);
 	}
 	if (hit.gameObject.tag == "enemy")
 	{
@@ -123,7 +123,7 @@ function AddMoney(amount : int) {
 		countMoney = "Coins: 0";
 	}
 	else {
-		coinCount++;
 		gui_money.text = "Coins: " + coinCount.ToString();
 	}
+	print(coinCount);
 }
