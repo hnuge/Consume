@@ -25,6 +25,8 @@ function Update ()
 	var coin : GameObject;
 var numcoins : int;
 var c : GameObject[];
+var columns : int;
+var rows : int;
 
 
 public var ts : tilescript;  	//access maketile script

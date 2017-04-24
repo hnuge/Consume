@@ -3,8 +3,6 @@
 
 
 var enemy : GameObject;
-var dist:float;
-var dir:int;
 var count:int;
 
 
