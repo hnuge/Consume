@@ -1,13 +1,12 @@
 ﻿#pragma strict
 
 var square:GameObject;
-var home:GameObject;
 
 var lastKey:String;
 var currKey:String;
 var count : int;
-public var ts : tilescript; // 	//access maketile script
-public var bs : basescript;	//access home base script
+public var ts : tilescript;  	//access maketile script
+
 var startX : float;
 var startY : float;
 var rightWall : float;
@@ -23,9 +22,6 @@ var columns : int = 16;
 var rows : int = 10;
 
 function Start () {
-
-
-	print(bs.rows);
 	currKey = "start";
 	count = 0;
 	cells = new GameObject[columns, rows];
@@ -101,11 +97,6 @@ function Update () {
 
 function OnTriggerEnter2D(hit : Collider2D)
 {
-
-	if (hit.gameObject.tag == "tile")
-	{
-		bs.makeHome(square.transform.position);
-	}
 
 	if (hit.gameObject.tag == "wall")
 	{
