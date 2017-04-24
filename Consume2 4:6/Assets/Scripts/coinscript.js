@@ -16,7 +16,7 @@ function Update ()
 
 function OnTriggerEnter2D (hit : Collider2D)
 {
-	if (hit.gameObject.tag == "player_square")
+	if (hit.gameObject.tag == "player_square" || hit.gameObject.tag == "enemy")
 	{
 		Destroy(coin);
 	}
