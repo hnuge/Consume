@@ -24,8 +24,8 @@ function StartPrompt () {
 
 	GUI.BeginGroup(Rect(halfScreenW-halfPromptW, halfScreenH-halfPromptH, winPromptW, winPromptH));
 	//GUI.Box(Rect(0,0,winPromptW, winPromptH), "Click below to play.");
-	var buttonW:int = 800;
-	var buttonH:int = 400;
+	var buttonW:int = 200;
+	var buttonH:int = 80;
 
 	GUI.skin.button = style;
 
