@@ -35,7 +35,8 @@ function Update () {
 		Movement 
 		Square moves exactly one length of itself
 	-----------------------------------------*/
-	//var move = Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+	var move : Vector3 = transform.position;
+	print(move);
 	//if(transform.position.x + move.x * speed * Time.deltaTime > 11.2)   //right wall
 		//move.x = 0;
 	//if(transform.position.x + move.x * speed * Time.deltaTime < -11.2)  //left wall
@@ -51,34 +52,39 @@ function Update () {
 		if (Input.GetKey("up"))
 		{
 			lastKey = "up";
-			transform.position.y += 1;
+			move.y += 1;
 			count = 0;
 		}
 		else if (Input.GetKey("down"))
 		{
 			lastKey = "down";
-			transform.position.y -= 1;
+			move.y -= 1;
 			count = 0;
 		}
 		else if (Input.GetKey("left"))
 		{
 			lastKey = "left";
-			transform.position.x -= 1;
+			move.x -= 1;
 			count = 0;
 		}
 		else if (Input.GetKey("right"))
 		{
 			lastKey = "right";
-			transform.position.x += 1;
+			move.x += 1;
 			count = 0;
+		}
+		if ((move.x == 0) || (move.x == 16))
+		{
+			move.x = 0;
 		}
 	
 		if (lastKey != currKey)
 		{
-			array.Push(transform.position);
+			array.Push(move);
 		}
 
 		currKey = lastKey;
+		transform.position = move;
 	}
 
 }
