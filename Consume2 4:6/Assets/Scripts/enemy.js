@@ -8,8 +8,6 @@ var dir:int;
 var count:int;
 
 
-public var ebs : enemybasescript;	//access enemy base script
-
 
 function Start () {
 	count = 0;
@@ -51,11 +49,5 @@ function wait()
 
 function OnTriggerEnter2D(hit : Collider2D)
 {
-
-	if (hit.gameObject.tag == "tile")
-	{
-		print("hit");
-		ebs.makeHome(enemy.transform.position);
-	}
 
 }
