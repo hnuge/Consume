@@ -19,40 +19,25 @@ function Update () {
 	count++;
 	if (count ==15)
 	{
-		dir = Random.Range(1,5);
-		print(dir);
-		dist = 1;
-
-		if (dir==1) 	//up
+		var xCo = 1;
+		var yCo = 1;
+		var squareX = GameObject.Find("Square").transform.position.x;
+		var squareY = GameObject.Find("Square").transform.position.y;
+		if (transform.position.x >squareX)
 		{
-			//if (transform.position.y + dist < 0)
-			//{
-				transform.position.y +=dist;
-			//}
+			xCo = -1;
 		}
-		else if (dir ==2) //down
+		if (transform.position.y >squareY)
 		{
-			//if (transform.position.y - dist > -8)
-			//{
-				transform.position.y -=dist;
-			//}
-
+			yCo = -1;
 		}
-		else if (dir == 3) //left
+		if (Mathf.Abs(squareX-transform.position.x) > Mathf.Abs(squareY-transform.position.y))
 		{
-			//if (transform.position.x - dist >0)
-			//{
-				transform.position.x -=dist;
-			//}
-
+			transform.position.x += xCo;
 		}
-		else if (dir == 4) //right
+		else
 		{
-			//if (transform.position.x + dist < 16)
-			//{
-				transform.position.x +=dist;
-			//}
-
+			transform.position.y += yCo;
 		}
 		count = 0;
 	}
