@@ -5,13 +5,20 @@
 var prefab : GameObject;
 var cells : GameObject[,];
 
+var coin : GameObject;
+var numcoins : int;
+var c : GameObject;
+
 public var rows : float;
 public var columns : float;
+
+var coinloc : int[,];
 
 
 
 function Start () {
 	cells = new GameObject[columns, rows];
+	coinloc = new int[columns,rows];
 
 	var i : float;
 	var j : float;
@@ -23,9 +30,22 @@ function Start () {
 			cells[i,j].layer = 3;
 			addCollider(cells[i,j]);
 			cells[i,j].tag = "tile";
+			coinloc[i,j] = 0;
 		}
 
 	}
+	var x:int;
+	var y:int;
+	for (i = 0; i < numcoins; i++)
+	{
+		x = Random.Range(0, columns);
+		y = Random.Range(0, rows);
+		c = Instantiate(coin, new Vector3(cells[x,y].transform.position.x, cells[x,y].transform.position.y, 0), Quaternion.identity);
+		coinloc[x,y] = 1;
+
+
+	}
+
 }
 
 function Update () {

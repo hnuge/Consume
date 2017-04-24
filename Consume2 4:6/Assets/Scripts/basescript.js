@@ -24,6 +24,4 @@ function makeHome(pos : Vector3)
 	ts.cells[pos.x,-pos.y].layer = 2;
 	ts.cells[pos.x,-pos.y].tag = "home";
 
-
-
 }

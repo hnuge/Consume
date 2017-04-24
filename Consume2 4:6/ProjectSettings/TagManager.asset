@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - player_square
-  - home
-  - tile
-  - enemy
-  - enemy_base
-  - wall
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - square
-  - home
+  - 
+  - 
   - 
   - 
   - 
@@ -46,10 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: square
-    uniqueID: 96719991
-    locked: 0
-  - name: home
-    uniqueID: 3659914327
     locked: 0

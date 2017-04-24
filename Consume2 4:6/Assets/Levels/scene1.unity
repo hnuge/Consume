@@ -224,6 +224,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1420450940242796, guid: 31120725c522d402fac9915b60bacd06, type: 2}
+  coin: {fileID: 1199282703281142, guid: 8c51f9be9d1b34c9db1e348a589ee7de, type: 2}
+  numcoins: 5
+  c: {fileID: 0}
   rows: 10
   columns: 16
 --- !u!4 &606514842
