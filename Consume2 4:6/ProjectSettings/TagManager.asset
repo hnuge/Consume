@@ -10,6 +10,7 @@ TagManager:
   - enemy_base
   - wall
   - coin
+  - tile
   layers:
   - Default
   - TransparentFX

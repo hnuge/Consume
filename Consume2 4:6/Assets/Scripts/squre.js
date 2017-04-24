@@ -77,7 +77,6 @@ function Update () {
 		}
 		if (move.x > rightWall)
 		{
-			print("AAAAAAAA");
 			move.x = move.x-1;
 		}
 		if (move.y > upWall)
