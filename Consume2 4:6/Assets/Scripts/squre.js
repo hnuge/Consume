@@ -21,6 +21,12 @@ var cells : GameObject[,];
 var columns : int = 16;
 var rows : int = 10;
 
+// coin
+var coinCount : int = 0;
+var countMoney : String;
+var gui_money:UI.Text;
+
+
 function Start () {
 	currKey = "start";
 	count = 0;
@@ -98,9 +104,9 @@ function Update () {
 function OnTriggerEnter2D(hit : Collider2D)
 {
 
-	if (hit.gameObject.tag == "wall")
+	if (hit.gameObject.tag == "coin")
 	{
-		print("hit wall");
+		AddMoney(coinCount);
 	}
 	if (hit.gameObject.tag == "enemy")
 	{
@@ -112,7 +118,12 @@ function OnTriggerEnter2D(hit : Collider2D)
 
 
 
-function turnCorners()
-{
-	
+function AddMoney(amount : int) {
+	if (amount == 0){
+		countMoney = "Coins: 0";
+	}
+	else {
+		coinCount++;
+		gui_money.text = "Coins: " + coinCount.ToString();
+	}
 }

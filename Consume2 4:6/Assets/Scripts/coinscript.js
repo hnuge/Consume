@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-
+var coin : GameObject;
 
 function Start () 
 {
@@ -14,7 +14,13 @@ function Update ()
 }
 
 
-
+function OnTriggerEnter2D (hit : Collider2D)
+{
+	if (hit.gameObject.tag == "player_square")
+	{
+		Destroy(coin);
+	}
+}
 
 
 
