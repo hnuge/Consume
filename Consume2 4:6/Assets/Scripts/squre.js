@@ -25,7 +25,11 @@ var rows : int = 10;
 var coinCount : int = 0;
 var countMoney : String;
 var gui_money:UI.Text;
+public var coinGoal : int;
 
+var style : GUIStyle;
+
+var win : boolean = false;
 
 function Start () {
 	currKey = "start";
@@ -124,6 +128,42 @@ function AddMoney(amount : int) {
 	}
 	else {
 		gui_money.text = "Coins: " + coinCount.ToString();
+		if (coinCount >= coinGoal)
+		{
+			win = true;
+			print("winnnn");
+		}
 	}
 	print(coinCount);
+}
+
+function OnGUI ()
+{
+	var winPromptW:int = 400;
+	var winPromptH:int = 400;
+	var halfScreenW:float = Screen.width/2;
+	var halfScreenH:float = Screen.height/2;
+	var halfPromptW:int = winPromptW/2;
+	var halfPromptH:int = winPromptH/2;
+
+	GUI.BeginGroup(Rect(halfScreenW-halfPromptW, halfScreenH-halfPromptH, winPromptW, winPromptH));
+	//GUI.Box(Rect(0,0,winPromptW, winPromptH), "Click below to play.");
+	var buttonW:int = 200;
+	var buttonH:int = 80;
+
+	if (win)
+	{
+		print("in gui");
+
+		GUI.skin.button = style;
+
+
+		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "You win! Click here to proceed to the next level :)"))
+		{
+			Application.LoadLevel("level2");
+		}
+	}
+
+	GUI.EndGroup();
+
 }

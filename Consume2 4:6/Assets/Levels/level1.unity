@@ -751,6 +751,31 @@ Prefab:
       propertyPath: gui_money
       value: 
       objectReference: {fileID: 896073171}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: coinGoal
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: style.m_Name
+      value: popup
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: style.m_Normal.m_Background
+      value: 
+      objectReference: {fileID: 2800000, guid: a46e2169c73104d7cb3c9edd68722aaa, type: 3}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: style.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: style.m_WordWrap
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0
