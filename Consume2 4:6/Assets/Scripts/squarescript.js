@@ -30,8 +30,8 @@ public var coinGoal : int;
 
 var style : GUIStyle;
 
-var win : boolean = false;
-var lose : boolean = false;
+var win : boolean;
+var lose : boolean;
 
 function Start () {
 	currKey = "start";
@@ -40,7 +40,9 @@ function Start () {
 	var i : float;
 	var j : float;
 
-
+	// you have to initialize win and lose in the Start function
+	win = false;
+	lose = false;
 }
 
 function Update () {
@@ -131,6 +133,7 @@ function AddMoney(amount : int) {
 		gui_money.text = "Coins: " + coinCount.ToString();
 		if (coinCount >= coinGoal)
 		{
+			print("poop");
 			win = true;
 		}
 		else if (coinCount + enemyCoins == coinGoal)
@@ -138,6 +141,11 @@ function AddMoney(amount : int) {
 			lose = true;
 		}
 	}
+}
+
+function AddEnemyMoney(amount : int)
+{
+	enemyCoins++;
 }
 
 function OnGUI ()
@@ -157,7 +165,6 @@ function OnGUI ()
 
 	if (win || lose)
 	{
-		print(win);
 		if (win) {output = "You win! Click here to proceed to the next level :D";}
 		if (lose) {output = "You lose :( Click to try again.";}
 		GUI.skin.button = style;

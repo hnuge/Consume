@@ -3,11 +3,9 @@
 var coin : GameObject;
 
 public var square : GameObject;
-private var ss : squarescript;
 
 function Start () 
 {
-	ss = square.GetComponent("squarescript") as squarescript;
 
 }
 
@@ -20,10 +18,16 @@ function Update ()
 function OnTriggerEnter2D (hit : Collider2D)
 {
 	
-	if (hit.gameObject.tag == "player_square" || hit.gameObject.tag == "enemy")
+	if (hit.gameObject.tag == "player_square")
 	{
 		Destroy(coin);
 		hit.gameObject.SendMessage("AddMoney", 1);
+	}
+
+	else if (hit.gameObject.tag == "enemy")
+	{
+		Destroy(coin);
+		hit.gameObject.SendMessage("AddEnemyMoney", 1);
 	}
 }
 
