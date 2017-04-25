@@ -22,7 +22,7 @@ var columns : int = 16;
 var rows : int = 10;
 
 // coin
-var coinCount : int = 0;
+var coinCount : int;
 var countMoney : String;
 var enemyCoins: int = 0;
 var gui_money:UI.Text;
@@ -39,6 +39,8 @@ function Start () {
 	cells = new GameObject[columns, rows];
 	var i : float;
 	var j : float;
+
+	coinCount = 0;
 
 }
 
@@ -109,12 +111,6 @@ function Update () {
 
 function OnCollisionEnter2D(coll : Collision2D)
 {
-	print("hi");
-	if (coll.gameObject.tag == "coin")
-	{
-		AddMoney(coinCount++);
-		print(coinCount);
-	}
 	if (coll.gameObject.tag == "enemy")
 	{
 		print("hit enemy");

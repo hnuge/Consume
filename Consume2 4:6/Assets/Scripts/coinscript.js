@@ -2,11 +2,12 @@
 
 var coin : GameObject;
 
-public var ss : squarescript;
+public var square : GameObject;
+private var ss : squarescript;
 
 function Start () 
 {
-
+	ss = square.GetComponent("squarescript") as squarescript;
 
 }
 
@@ -21,6 +22,8 @@ function OnTriggerEnter2D (hit : Collider2D)
 	if (hit.gameObject.tag == "player_square" || hit.gameObject.tag == "enemy")
 	{
 		Destroy(coin);
+		print(ss.coinCount);
+		ss.AddMoney(ss.coinCount++);
 	}
 }
 

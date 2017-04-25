@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 1367503838928602}
+  square: {fileID: 1290430640078728, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
 --- !u!212 &212972198910218486
 SpriteRenderer:
   m_ObjectHideFlags: 1
