@@ -2,6 +2,8 @@
 
 var coin : GameObject;
 
+public var ss : squarescript;
+
 function Start () 
 {
 

@@ -45,7 +45,7 @@ function wait()
 }
 
 
-function OnTriggerEnter2D(hit : Collider2D)
+function OnCollisonEnter2D(hit : Collision2D)
 {
 
 }

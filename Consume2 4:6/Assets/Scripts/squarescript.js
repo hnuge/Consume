@@ -107,20 +107,23 @@ function Update () {
 
 }
 
-function OnTriggerEnter2D(hit : Collider2D)
+function OnCollisionEnter2D(coll : Collision2D)
 {
-
-	if (hit.gameObject.tag == "coin")
+	print("hi");
+	if (coll.gameObject.tag == "coin")
 	{
 		AddMoney(coinCount++);
+		print(coinCount);
 	}
-	if (hit.gameObject.tag == "enemy")
+	if (coll.gameObject.tag == "enemy")
 	{
 		print("hit enemy");
 		transform.position.x = startX;
 		transform.position.y = startY;
 	}
+
 }
+
 
 
 

@@ -468,84 +468,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
-      propertyPath: home
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
       propertyPath: ts
       value: 
       objectReference: {fileID: 91181323}
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
-      propertyPath: bs
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 61335576889573238, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: startX
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: startY
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: rightWall
-      value: 15.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: leftWall
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: upWall
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: downWall
-      value: -9.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
       propertyPath: gui_money
       value: 
       objectReference: {fileID: 777165696}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: coinGoal
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style.m_Name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style.m_Normal.m_Background
-      value: 
-      objectReference: {fileID: 2800000, guid: a46e2169c73104d7cb3c9edd68722aaa, type: 3}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style.m_WordWrap
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style.m_Alignment
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0
@@ -768,6 +698,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4201403206271942, guid: 5df520d8c9b3f4a6ea3cc691490f6f2a, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61509030925232588, guid: 5df520d8c9b3f4a6ea3cc691490f6f2a,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50386897857322120, guid: 5df520d8c9b3f4a6ea3cc691490f6f2a,
+        type: 2}
+      propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
