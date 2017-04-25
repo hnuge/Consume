@@ -24,12 +24,14 @@ var rows : int = 10;
 // coin
 var coinCount : int = 0;
 var countMoney : String;
+var enemyCoins: int = 0;
 var gui_money:UI.Text;
 public var coinGoal : int;
 
 var style : GUIStyle;
 
 var win : boolean = false;
+var lose : boolean = false;
 
 function Start () {
 	currKey = "start";
@@ -133,8 +135,11 @@ function AddMoney(amount : int) {
 			win = true;
 			print("winnnn");
 		}
+		else if (coinCount + enemyCoins == coinGoal)
+		{
+			lose = true;
+		}
 	}
-	print(coinCount);
 }
 
 function OnGUI ()
@@ -150,15 +155,19 @@ function OnGUI ()
 	//GUI.Box(Rect(0,0,winPromptW, winPromptH), "Click below to play.");
 	var buttonW:int = 200;
 	var buttonH:int = 80;
+	var output : String;
 
-	if (win)
+	if (win || lose)
 	{
 		print("in gui");
+		if (win) {output = "You win! Click here to proceed to the next level :D";}
+		if (lose) {output = "You lose :( Click to try again.";}
+			
 
 		GUI.skin.button = style;
 
 
-		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "You win! Click here to proceed to the next level :)"))
+		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
 		{
 			Application.LoadLevel("level2");
 		}
