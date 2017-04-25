@@ -19,11 +19,11 @@ function Update ()
 
 function OnTriggerEnter2D (hit : Collider2D)
 {
+	
 	if (hit.gameObject.tag == "player_square" || hit.gameObject.tag == "enemy")
 	{
 		Destroy(coin);
-		print(ss.coinCount);
-		ss.AddMoney(ss.coinCount++);
+		hit.gameObject.SendMessage("AddMoney", 1);
 	}
 }
 

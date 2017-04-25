@@ -22,7 +22,7 @@ var columns : int = 16;
 var rows : int = 10;
 
 // coin
-var coinCount : int;
+var coinCount : int = 0;
 var countMoney : String;
 var enemyCoins: int = 0;
 var gui_money:UI.Text;
@@ -40,7 +40,6 @@ function Start () {
 	var i : float;
 	var j : float;
 
-	coinCount = 0;
 
 }
 
@@ -128,11 +127,11 @@ function AddMoney(amount : int) {
 		countMoney = "Coins: 0";
 	}
 	else {
+		coinCount++;
 		gui_money.text = "Coins: " + coinCount.ToString();
 		if (coinCount >= coinGoal)
 		{
 			win = true;
-			print("winnnn");
 		}
 		else if (coinCount + enemyCoins == coinGoal)
 		{
@@ -158,11 +157,9 @@ function OnGUI ()
 
 	if (win || lose)
 	{
-		print("in gui");
+		print(win);
 		if (win) {output = "You win! Click here to proceed to the next level :D";}
 		if (lose) {output = "You lose :( Click to try again.";}
-			
-
 		GUI.skin.button = style;
 
 
