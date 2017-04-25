@@ -153,8 +153,8 @@ function OnGUI ()
 
 	GUI.BeginGroup(Rect(halfScreenW-halfPromptW, halfScreenH-halfPromptH, winPromptW, winPromptH));
 	//GUI.Box(Rect(0,0,winPromptW, winPromptH), "Click below to play.");
-	var buttonW:int = 200;
-	var buttonH:int = 80;
+	var buttonW:int = 400;
+	var buttonH:int = 160;
 	var output : String;
 
 	if (win || lose)

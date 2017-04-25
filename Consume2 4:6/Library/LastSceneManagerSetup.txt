@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< Updated upstream
-- path: Assets/Levels/level1.unity
-=======
-- path: Assets/Levels/Cole Scratch.unity
->>>>>>> Stashed changes
+- path: Assets/Levels/level3-scratch.unity
   isLoaded: 1
   isActive: 1

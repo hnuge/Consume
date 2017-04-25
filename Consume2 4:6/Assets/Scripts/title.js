@@ -33,13 +33,13 @@ function StartPrompt () {
 
 	if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2)/3, buttonW, buttonH), ""))
 	{
-		Application.LoadLevel("scene1");
+		Application.LoadLevel("level1");
 	}
 
 	GUI.skin.button = style2;
 	if (GUI.Button(Rect((halfPromptW-(400/2)), halfPromptH-(buttonH/2)+110, 400, buttonH), ""))
 	{
-		Application.LoadLevel("scene1");
+		Application.LoadLevel("level1");
 	}
 	GUI.EndGroup();
 }
