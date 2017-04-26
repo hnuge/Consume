@@ -31,6 +31,7 @@ public var coinGoal : int;
 public var coinTotal : int;
 
 var style : GUIStyle;
+var style2 : GUIStyle;
 
 var win : boolean;
 var lose : boolean;
@@ -227,6 +228,8 @@ function OnGUI ()
 	var buttonH:int = 160;
 	var output : String;
 
+	GUI.skin.button = style;
+
 	if (level ==0 && !started)
     {
         if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "Use the arrow keys to collect all the coins.\n (Click to begin)"))
@@ -269,6 +272,13 @@ function OnGUI ()
 		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
 		{
 			SceneManager.LoadScene(nextLev);
+
+		}
+
+		GUI.skin.button = style2;
+		if (GUI.Button(Rect(halfPromptW-(80/2), halfPromptH-(80/2)/3+120, 80, 80), ""))
+		{
+			SceneManager.LoadScene("title");
 
 		}
 	}

@@ -898,6 +898,16 @@ Prefab:
       propertyPath: collectObj
       value: 
       objectReference: {fileID: 1197364702}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: style2.m_Name
+      value: homebutton
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: style2.m_Normal.m_Background
+      value: 
+      objectReference: {fileID: 2800000, guid: e3c9aa4585988417ea2becab0ce1d9cc, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0
