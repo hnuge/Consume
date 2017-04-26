@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/level4.unity
     guid: d2a87f26a72d34367a30d71fe221a3c9
+  - enabled: 1
+    path: Assets/Levels/pickcolor.unity
+    guid: cd833d176d2ef44dd91f3bb4d0f05d55
