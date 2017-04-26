@@ -36,8 +36,10 @@ var lose : boolean;
 var level : int;
 static var levArr:String[];
 var scene:String;
+var started:boolean;
 
 function Start () {
+	started = false;
 	//levArr = new List.<String>();
 	levArr = ["level1","level2","level3","level4","level5","level6","level7"];
 
@@ -193,6 +195,22 @@ function OnGUI ()
 	var buttonH:int = 160;
 	var output : String;
 
+	if (level ==0 && !started)
+	{
+		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "Use the arrow keys to collect all the coins.\n (Click to begin)"))
+		{
+			started = true;
+
+		}
+	}
+	if (level == 1 && !started)
+	{
+		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The red square is trying to chase you! If you get hit, you'll be sent back to base\n (Click to begin)"))
+		{
+			started = true;
+		}
+	}
+
 	if (win)
 	{
 		output = "You win! Click here to proceed to the next level :D";
@@ -203,6 +221,7 @@ function OnGUI ()
 		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
 		{
 			SceneManager.LoadScene(nextLev);
+
 		}
 	}
 
