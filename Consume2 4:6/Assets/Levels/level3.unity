@@ -340,7 +340,7 @@ Prefab:
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
       propertyPath: coinGoal
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
@@ -366,6 +366,11 @@ Prefab:
         type: 2}
       propertyPath: coinCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: coinTotal
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}

@@ -68,11 +68,7 @@ function Start () {
 	if (scene == "level5") {level=4;}
 	if (scene == "level6") {level=5;}
 	if (scene == "level7") {level=6;}
-<<<<<<< Updated upstream
 
-
-=======
->>>>>>> Stashed changes
 	coinCount = 0;
 }
 
