@@ -215,6 +215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
   count: 0
+  r: 0
+  move: 2
   paused: 0
 --- !u!212 &212180340348068668
 SpriteRenderer:

@@ -4,6 +4,8 @@
 
 var enemy : GameObject;
 var count:int;
+var r : float;
+var move : int = 2;
 
 var paused : boolean;
 
@@ -34,10 +36,22 @@ function Update () {
 			}
 			if (Mathf.Abs(squareX-transform.position.x) > Mathf.Abs(squareY-transform.position.y))
 			{
+				if (move == 0 && r != transform.position.x)
+				{
+					move = 1;
+					transform.position.y += .25;
+				}
+				move = 0;
 				transform.position.x += xCo;
+				r = transform.position.x;
 			}
 			else
 			{
+				if (move == 1 && r != transform.position.y)
+				{
+					move = 0;
+					transform.position.x += .25;
+				}
 				transform.position.y += yCo;
 			}
 			count = 0;
