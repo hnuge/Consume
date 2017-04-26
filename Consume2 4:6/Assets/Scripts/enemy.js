@@ -53,5 +53,8 @@ function wait()
 
 function OnCollisonEnter2D(hit : Collision2D)
 {
-
+	if (hit.gameObject.tag == "wall")
+	{
+		print("hit wall");
+	}
 }
