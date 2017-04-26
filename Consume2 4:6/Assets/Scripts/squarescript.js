@@ -38,6 +38,10 @@ static var levArr:String[];
 var scene:String;
 var started:boolean;
 
+//music vars
+//var song:AudioClip;
+//var aud:AudioSource;
+
 function Start () {
 	started = false;
 	//levArr = new List.<String>();
@@ -52,7 +56,6 @@ function Start () {
 	// you have to initialize win and lose in the Start function
 	win = false;
 	lose = false;
-<<<<<<< Updated upstream
 	//words = new List.<GameObject>();
 
 
@@ -66,10 +69,7 @@ function Start () {
 	if (scene == "level7") {level=6;}
 
 
-
-=======
 	coinCount = 0;
->>>>>>> Stashed changes
 }
 
 function Update () {
