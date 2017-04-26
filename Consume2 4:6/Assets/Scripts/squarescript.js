@@ -1,4 +1,5 @@
 ﻿#pragma strict
+import UnityEngine.SceneManagement;
 
 var square:GameObject;
 
@@ -32,8 +33,14 @@ var style : GUIStyle;
 
 var win : boolean;
 var lose : boolean;
+var level : int;
+static var levArr:String[];
+var scene:String;
 
 function Start () {
+	//levArr = new List.<String>();
+	levArr = ["level1","level2","level3","level4","level5","level6","level7"];
+
 	currKey = "start";
 	count = 0;
 	cells = new GameObject[columns, rows];
@@ -43,6 +50,20 @@ function Start () {
 	// you have to initialize win and lose in the Start function
 	win = false;
 	lose = false;
+	//words = new List.<GameObject>();
+
+
+	scene = SceneManager.GetActiveScene().name; //get current scene
+	if (scene == "level1") {level=0;} //get index of current scene
+	if (scene == "level2") {level=1;}
+	if (scene == "level3") {level=2;}
+	if (scene == "level4") {level=3;}
+	if (scene == "level5") {level=4;}
+	if (scene == "level6") {level=5;}
+	if (scene == "level7") {level=6;}
+
+
+
 }
 
 function Update () {
@@ -163,16 +184,28 @@ function OnGUI ()
 	var buttonH:int = 160;
 	var output : String;
 
-	if (win || lose)
+	if (win)
 	{
-		if (win) {output = "You win! Click here to proceed to the next level :D";}
-		if (lose) {output = "You lose :( Click to try again.";}
+		output = "You win! Click here to proceed to the next level :D";
+
 		GUI.skin.button = style;
 
+		var nextLev:String = levArr[level+1];
+		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
+		{
+			SceneManager.LoadScene(nextLev);
+		}
+	}
+
+	if (lose)
+	{
+		output = "You lose :( Click to try again.";
+
+		GUI.skin.button = style;
 
 		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
 		{
-			Application.LoadLevel("level2");
+			SceneManager.LoadScene(scene);
 		}
 	}
 
