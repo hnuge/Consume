@@ -40,7 +40,7 @@ function StartPrompt () {
 	GUI.skin.button = style2;
 	if (GUI.Button(Rect((halfPromptW-(300/2)), halfPromptH-(buttonH/2)+110, 300, buttonH), ""))
 	{
-		SceneManager.LoadScene("credits");
+		SceneManager.LoadScene("title");
 	}
 	GUI.EndGroup();
 }

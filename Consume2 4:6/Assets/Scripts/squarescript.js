@@ -253,7 +253,7 @@ function OnGUI ()
         }
     }
 
-    if (level == 2 && !started) //level 2 popup
+    if (level == 2 && !started) //level 3 popup
     {
         collectScript.paused = true;
         enemyScript.paused = true;
