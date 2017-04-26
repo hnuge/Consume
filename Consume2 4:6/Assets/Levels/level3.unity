@@ -305,12 +305,12 @@ Prefab:
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
       propertyPath: startX
-      value: 2.5
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
       propertyPath: startY
-      value: -1.5
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
