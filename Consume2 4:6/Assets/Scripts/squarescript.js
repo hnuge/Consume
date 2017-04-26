@@ -49,6 +49,8 @@ var rayVector : Vector2;
 private var myCollider2D : Collider2D;
 var pos : Vector2;
 
+//var paused : boolean;
+
 var enemyObj : GameObject;
 var enemyScript : enemy;
 var collectObj : GameObject;
@@ -96,74 +98,77 @@ function Update () {
 		Movement 
 		Square moves exactly one length of itself
 	-----------------------------------------*/
-	var move : Vector3 = transform.position;
-	rayVector.x = 1;
-	rayVector.y = 0;
-	pos.x = transform.position.x;
-	pos.y = transform.position.y;
-	raysResults = Physics2D.Raycast(pos, rayVector, 0.1, 8, -1, 1);
-	if (raysResults.collider != null)
+	if (started)
 	{
-		//print("yo");
-		var distance = Mathf.Abs(raysResults.point.x - transform.position.x);
-		print(distance);
-	}
-
-
-	count++;
-	if(count >= 7)
-	{
-		if (Input.GetKey("up"))
+		var move : Vector3 = transform.position;
+		rayVector.x = 1;
+		rayVector.y = 0;
+		pos.x = transform.position.x;
+		pos.y = transform.position.y;
+		raysResults = Physics2D.Raycast(pos, rayVector, 0.1, 8, -1, 1);
+		if (raysResults.collider != null)
 		{
-			lastKey = "up";
-			move.y += 1;
-			count = 0;
-		}
-		else if (Input.GetKey("down"))
-		{
-			lastKey = "down";
-			move.y -= 1;
-			count = 0;
-		}
-		else if (Input.GetKey("left"))
-		{
-			lastKey = "left";
-			move.x -= 1;
-			count = 0;
-		}
-		else if (Input.GetKey("right"))
-		{
-			lastKey = "right";
-			move.x += 1;
-			count = 0;
-		}
-		/* --------------------
-		 	wall
-		 ---------------------*/
-		if (move.x < leftWall)
-		{
-			move.x = move.x+1;
-		}
-		if (move.x > rightWall)
-		{
-			move.x = move.x-1;
-		}
-		if (move.y > upWall)
-		{
-			move.y = move.y-1;
-		}
-		if (move.y < downWall)
-		{
-			move.y = move.y+1;
-		}
-	
-		if (lastKey != currKey)
-		{
-			array.Push(move);
+			//print("yo");
+			var distance = Mathf.Abs(raysResults.point.x - transform.position.x);
+			print(distance);
 		}
 
-		currKey = lastKey;
-		transform.position = move;
+
+		count++;
+		if(count >= 7)
+		{
+			if (Input.GetKey("up"))
+			{
+				lastKey = "up";
+				move.y += 1;
+				count = 0;
+			}
+			else if (Input.GetKey("down"))
+			{
+				lastKey = "down";
+				move.y -= 1;
+				count = 0;
+			}
+			else if (Input.GetKey("left"))
+			{
+				lastKey = "left";
+				move.x -= 1;
+				count = 0;
+			}
+			else if (Input.GetKey("right"))
+			{
+				lastKey = "right";
+				move.x += 1;
+				count = 0;
+			}
+			/* --------------------
+			 	wall
+			 ---------------------*/
+			if (move.x < leftWall)
+			{
+				move.x = move.x+1;
+			}
+			if (move.x > rightWall)
+			{
+				move.x = move.x-1;
+			}
+			if (move.y > upWall)
+			{
+				move.y = move.y-1;
+			}
+			if (move.y < downWall)
+			{
+				move.y = move.y+1;
+			}
+		
+			if (lastKey != currKey)
+			{
+				array.Push(move);
+			}
+
+			currKey = lastKey;
+			transform.position = move;
+		}
 	}
 
 }
