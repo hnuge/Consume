@@ -13,7 +13,7 @@ function Start () {
 
 function Update () {
 	count++;
-	if (count ==15)
+	if (count ==10)
 	{
 		var xCo = 1;
 		var yCo = 1;
