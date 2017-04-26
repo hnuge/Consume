@@ -48,6 +48,11 @@ var rayVector : Vector2;
 private var myCollider2D : Collider2D;
 var pos : Vector2;
 
+var enemyObj : GameObject;
+var enemyScript : enemy;
+var collectObj : GameObject;
+var collectScript : collector;
+
 function Start () {
 	started = false;
 	//levArr = new List.<String>();
@@ -80,6 +85,9 @@ function Start () {
 	print(LayerMask.LayerToName(8));
 
 	myCollider2D = GetComponent.<Collider2D>();
+
+	enemyScript = enemyObj.GetComponent(enemy); 
+    collectScript = collectObj.GetComponent(collector); 
 }
 
 function Update () {
@@ -220,26 +228,42 @@ function OnGUI ()
 	var output : String;
 
 	if (level ==0 && !started)
-	{
-		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "Use the arrow keys to collect all the coins.\n (Click to begin)"))
-		{
-			started = true;
+    {
+        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "Use the arrow keys to collect all the coins.\n (Click to begin)"))
+        {
+            started = true;
 
-		}
-	}
-	if (level == 1 && !started)
-	{
-		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The red square is trying to chase you! If you get hit, you'll be sent back to base\n (Click to begin)"))
-		{
-			started = true;
-		}
-	}
+        }
+    }
+    if (level == 1 && !started) //level 2 popup
+    {
+        enemyScript.paused = true;
+        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The red square is trying to chase you! If you get hit, you'll be sent back to base\n (Click to begin)"))
+        {
+            started = true;
+            enemyScript.paused = false;
+        }
+    }
 
-	if (win)
+    if (level == 2 && !started) //level 2 popup
+    {
+        collectScript.paused = true;
+        enemyScript.paused = true;
+        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The brown square wants your coins. Beware!\n (Click to begin)"))
+        {
+            started = true;
+            collectScript.paused = false;
+            enemyScript.paused = false;
+        }
+    }
+
+    if (win)
 	{
 		output = "You win! Click here to proceed to the next level :D";
 
 		GUI.skin.button = style;
+        collectScript.paused = true;
+        enemyScript.paused = true;
 
 		var nextLev:String = levArr[level+1];
 		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
@@ -251,6 +275,8 @@ function OnGUI ()
 
 	if (lose)
 	{
+		enemyScript.paused = true;
+		collectScript.paused = true;
 		output = "You lose :( Click to try again.";
 
 		GUI.skin.button = style;

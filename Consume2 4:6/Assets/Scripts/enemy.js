@@ -5,37 +5,43 @@
 var enemy : GameObject;
 var count:int;
 
+var paused : boolean;
+
 
 
 function Start () {
 	count = 0;
+	paused = false;
 }
 
 function Update () {
-	count++;
-	if (count ==10)
+	if (!paused)
 	{
-		var xCo = 1;
-		var yCo = 1;
-		var squareX = GameObject.Find("Square").transform.position.x;
-		var squareY = GameObject.Find("Square").transform.position.y;
-		if (transform.position.x >squareX)
+		count++;
+		if (count ==10)
 		{
-			xCo = -1;
+			var xCo = 1;
+			var yCo = 1;
+			var squareX = GameObject.Find("Square").transform.position.x;
+			var squareY = GameObject.Find("Square").transform.position.y;
+			if (transform.position.x >squareX)
+			{
+				xCo = -1;
+			}
+			if (transform.position.y >squareY)
+			{
+				yCo = -1;
+			}
+			if (Mathf.Abs(squareX-transform.position.x) > Mathf.Abs(squareY-transform.position.y))
+			{
+				transform.position.x += xCo;
+			}
+			else
+			{
+				transform.position.y += yCo;
+			}
+			count = 0;
 		}
-		if (transform.position.y >squareY)
-		{
-			yCo = -1;
-		}
-		if (Mathf.Abs(squareX-transform.position.x) > Mathf.Abs(squareY-transform.position.y))
-		{
-			transform.position.x += xCo;
-		}
-		else
-		{
-			transform.position.y += yCo;
-		}
-		count = 0;
 	}
 }
 

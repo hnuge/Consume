@@ -372,6 +372,16 @@ Prefab:
       propertyPath: coinTotal
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: enemyObj
+      value: 
+      objectReference: {fileID: 1932655742}
+    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
+        type: 2}
+      propertyPath: collectObj
+      value: 
+      objectReference: {fileID: 592257871}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0
@@ -511,6 +521,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc950932ecacd4f0fbe113ccb2a82fa1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &592257871 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1188006893122474, guid: fc950932ecacd4f0fbe113ccb2a82fa1,
+    type: 2}
+  m_PrefabInternal: {fileID: 592257870}
 --- !u!1 &619160702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1351,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df520d8c9b3f4a6ea3cc691490f6f2a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1932655742 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1653187213938832, guid: 5df520d8c9b3f4a6ea3cc691490f6f2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1932655741}
 --- !u!1 &1957897198
 GameObject:
   m_ObjectHideFlags: 0
