@@ -3,7 +3,7 @@
 var enemy : GameObject;
 var count:int;
 var r : float;
-var move : int;
+var move : int = 2;
 
 var paused : boolean;
 
@@ -47,12 +47,9 @@ function Update () {
 					move = 1;
 					transform.position.y += -.25;
 				}
-				else
-				{
-					move = 0;
-					transform.position.x += xCo;
-					r = transform.position.x;
-				}
+				move = 0;
+				transform.position.x += xCo;
+				r = transform.position.x;
 			}
 			else
 			{
@@ -61,10 +58,7 @@ function Update () {
 					move = 0;
 					transform.position.x += -.25;
 				}
-				else
-				{
-					transform.position.y += yCo;
-				}
+				transform.position.y += yCo;
 			}
 			count = 0;
 		}
