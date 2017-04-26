@@ -23,7 +23,7 @@ var columns : int = 16;
 var rows : int = 10;
 
 // coin
-var coinCount : int = 0;
+var coinCount : int;
 var countMoney : String;
 var enemyCoins: int = 0;
 var gui_money:UI.Text;
@@ -50,6 +50,7 @@ function Start () {
 	// you have to initialize win and lose in the Start function
 	win = false;
 	lose = false;
+<<<<<<< Updated upstream
 	//words = new List.<GameObject>();
 
 
@@ -64,6 +65,9 @@ function Start () {
 
 
 
+=======
+	coinCount = 0;
+>>>>>>> Stashed changes
 }
 
 function Update () {
@@ -138,6 +142,11 @@ function OnCollisionEnter2D(coll : Collision2D)
 		print("hit enemy");
 		transform.position.x = startX;
 		transform.position.y = startY;
+	}
+
+	if (coll.gameObject.tag == "wall")
+	{
+		print("hit wall");
 	}
 
 }
