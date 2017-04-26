@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< Updated upstream
-- path: Assets/Levels/haley-scratch.unity
-=======
-- path: Assets/Levels/level2.unity
->>>>>>> Stashed changes
+- path: Assets/Levels/level1.unity
   isLoaded: 1
   isActive: 1

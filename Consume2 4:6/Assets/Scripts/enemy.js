@@ -18,7 +18,7 @@ function Update () {
 	if (!paused)
 	{
 		count++;
-		if (count ==10)
+		if (count ==13)
 		{
 			var xCo = 1;
 			var yCo = 1;
