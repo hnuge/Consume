@@ -18,19 +18,19 @@ function Update () {
 	if (!paused)
 	{
 		count++;
-		if (count ==13)
+		if (count ==4)
 		{
-			var xCo = 1;
-			var yCo = 1;
+			var xCo = .25;
+			var yCo = .25;
 			var squareX = GameObject.Find("Square").transform.position.x;
 			var squareY = GameObject.Find("Square").transform.position.y;
 			if (transform.position.x >squareX)
 			{
-				xCo = -1;
+				xCo = -.25;
 			}
 			if (transform.position.y >squareY)
 			{
-				yCo = -1;
+				yCo = -.25;
 			}
 			if (Mathf.Abs(squareX-transform.position.x) > Mathf.Abs(squareY-transform.position.y))
 			{
