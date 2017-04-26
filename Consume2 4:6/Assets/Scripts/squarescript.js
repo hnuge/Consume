@@ -269,6 +269,7 @@ function OnGUI ()
             enemyScript.paused = false;
         }
     }
+    else if (!started && level >2) {started = true;}
 
     if (win)
 	{
@@ -304,6 +305,12 @@ function OnGUI ()
 		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
 		{
 			SceneManager.LoadScene(scene);
+		}
+		GUI.skin.button = style2;
+		if (GUI.Button(Rect(halfPromptW-(80/2), halfPromptH-(80/2)/3+120, 80, 80), ""))
+		{
+			SceneManager.LoadScene("title");
+
 		}
 	}
 
