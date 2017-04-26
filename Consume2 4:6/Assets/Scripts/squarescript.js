@@ -198,11 +198,12 @@ function OnCollisionEnter2D(coll : Collision2D)
 
 function AddMoney(amount : int) {
 	if (amount == 0){
-		countMoney = "Coins: 0";
+		countMoney = "Coins to win: " + coinGoal.ToString();
+		//gui_money.text = countMoney
 	}
 	else {
 		coinCount++;
-		gui_money.text = "Coins: " + coinCount.ToString();
+		gui_money.text = "Coins to win: " + (coinGoal-coinCount).ToString();
 		if (coinCount >= coinGoal)
 		{
 			win = true;
