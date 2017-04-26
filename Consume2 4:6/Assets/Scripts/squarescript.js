@@ -102,13 +102,12 @@ function Start () {
 
 	coinCount = 0;
 	coinCount = 0;
-	print(LayerMask.LayerToName(8));
 
 	myCollider2D = GetComponent.<Collider2D>();
 
 	enemyScript = enemyObj.GetComponent(enemy); 
     collectScript = collectObj.GetComponent(collector); 
-	mask = 8;
+
 }
 
 function Update () {
@@ -206,6 +205,7 @@ function OnCollisionEnter2D(coll : Collision2D)
 	if (coll.gameObject.tag == "wall")
 	{
 	}
+
 
 }
 

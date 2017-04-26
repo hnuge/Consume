@@ -65,10 +65,10 @@ function wait()
 }
 
 
-function OnCollisonEnter2D(hit : Collision2D)
+function OnCollisonEnter2D(coll : Collision2D)
 {
 	print("hit");
-	if (hit.gameObject.tag == "wall")
+	if (coll.gameObject.CompareTag("player_square"))
 	{
 		print("hit wall");
 	}
