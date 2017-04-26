@@ -92,7 +92,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61509030925232588
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1653187213938832}
   count: 0
+  paused: 0
 --- !u!212 &212345653368438756
 SpriteRenderer:
   m_ObjectHideFlags: 1
