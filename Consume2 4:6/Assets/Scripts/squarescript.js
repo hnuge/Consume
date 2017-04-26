@@ -59,6 +59,8 @@ var collectScript : collector;
 
 function Start () {
 	started = false;
+	gui_money.text = "Coins to win: " + (coinGoal).ToString();
+
 	//levArr = new List.<String>();
 	levArr = ["level1","level2","level3","level4","level5","level6","level7"];
 
@@ -197,22 +199,24 @@ function OnCollisionEnter2D(coll : Collision2D)
 
 
 function AddMoney(amount : int) {
-	if (amount == 0){
-		countMoney = "Coins to win: " + coinGoal.ToString();
-		//gui_money.text = countMoney
-	}
-	else {
+//	if (amount == 0){
+//		countMoney = "Coins to win: " + coinGoal.ToString();
+//		//gui_money.text = countMoney
+//	}
+//	else {
 		coinCount++;
 		gui_money.text = "Coins to win: " + (coinGoal-coinCount).ToString();
 		if (coinCount >= coinGoal)
 		{
 			win = true;
+			started = false;
 		}
 		else if (coinTotal - enemyCoins < coinGoal)
 		{
 			lose = true;
+			started = false;
 		}
-	}
+//	}
 }
 
 function AddEnemyMoney(amount : int)
