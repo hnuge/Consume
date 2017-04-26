@@ -48,6 +48,7 @@ var raysResults : RaycastHit2D;
 var rayVector : Vector2;
 private var myCollider2D : Collider2D;
 var pos : Vector2;
+var mask : LayerMask;
 
 //var paused : boolean;
 
@@ -91,6 +92,7 @@ function Start () {
 
 	enemyScript = enemyObj.GetComponent(enemy); 
     collectScript = collectObj.GetComponent(collector); 
+	mask = 8;
 }
 
 function Update () {
@@ -106,71 +108,74 @@ function Update () {
 		pos.x = transform.position.x;
 		pos.y = transform.position.y;
 		raysResults = Physics2D.Raycast(pos, rayVector, 0.1, 8, -1, 1);
+		print(mask);
 		if (raysResults.collider != null)
 		{
 			//print("yo");
 			var distance = Mathf.Abs(raysResults.point.x - transform.position.x);
-			print(distance);
+			print(raysResults.point);
 		}
-
 
 		count++;
-		if(count >= 7)
+		if(count >= 2)
 		{
-			if (Input.GetKey("up"))
-			{
-				lastKey = "up";
-				move.y += 1;
-				count = 0;
-			}
-			else if (Input.GetKey("down"))
-			{
-				lastKey = "down";
-				move.y -= 1;
-				count = 0;
-			}
-			else if (Input.GetKey("left"))
-			{
-				lastKey = "left";
-				move.x -= 1;
-				count = 0;
-			}
-			else if (Input.GetKey("right"))
-			{
-				lastKey = "right";
-				move.x += 1;
-				count = 0;
-			}
-			/* --------------------
-			 	wall
-			 ---------------------*/
-			if (move.x < leftWall)
-			{
-				move.x = move.x+1;
-			}
-			if (move.x > rightWall)
-			{
-				move.x = move.x-1;
-			}
-			if (move.y > upWall)
-			{
-				move.y = move.y-1;
-			}
-			if (move.y < downWall)
-			{
-				move.y = move.y+1;
-			}
-		
-			if (lastKey != currKey)
-			{
-				array.Push(move);
-			}
 
-			currKey = lastKey;
-			transform.position = move;
+			if(count >= 2)
+			{
+				if (Input.GetKey("up"))
+				{
+					lastKey = "up";
+					move.y += .25;
+					count = 0;
+				}
+				else if (Input.GetKey("down"))
+				{
+					lastKey = "down";
+					move.y -= .25;
+					count = 0;
+				}
+				else if (Input.GetKey("left"))
+				{
+					lastKey = "left";
+					move.x -= .25;
+					count = 0;
+				}
+				else if (Input.GetKey("right"))
+				{
+					lastKey = "right";
+					move.x += .25;
+					count = 0;
+				}
+				/* --------------------
+				 	wall
+				 ---------------------*/
+				if (move.x < leftWall)
+				{
+					move.x = move.x+.25;
+				}
+				if (move.x > rightWall)
+				{
+					move.x = move.x-.25;
+				}
+				if (move.y > upWall)
+				{
+					move.y = move.y-.25;
+				}
+				if (move.y < downWall)
+				{
+					move.y = move.y+.25;
+				}
+			
+				if (lastKey != currKey)
+				{
+					array.Push(move);
+				}
+
+				currKey = lastKey;
+				transform.position = move;
+			}
 		}
 	}
-
 }
 
 function OnCollisionEnter2D(coll : Collision2D)
