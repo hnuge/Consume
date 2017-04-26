@@ -461,6 +461,7 @@ MonoBehaviour:
   enemyScript: {fileID: 0}
   collectObj: {fileID: 0}
   collectScript: {fileID: 0}
+  sqColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!212 &212958574227105940
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -494,7 +495,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: ba2f043858d4f444a8c8fc612c36c448, type: 3}
-  m_Color: {r: 0.07374569, g: 0.774503, b: 0.9117647, a: 1}
+  m_Color: {r: 0.5686275, g: 1, b: 0.64705884, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

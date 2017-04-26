@@ -56,6 +56,10 @@ var enemyObj : GameObject;
 var enemyScript : enemy;
 var collectObj : GameObject;
 var collectScript : collector;
+//var colorObj : GameObject;
+//var colorScript : pickcolor;
+
+var sqColor : Color;
 
 function Start () {
 	started = false;
@@ -74,6 +78,7 @@ function Start () {
 	win = false;
 	lose = false;
 	//words = new List.<GameObject>();
+	sqColor = savecolor.sqColor;
 
 
 	scene = SceneManager.GetActiveScene().name; //get current scene
@@ -84,6 +89,8 @@ function Start () {
 	if (scene == "level5") {level=4;}
 	if (scene == "level6") {level=5;}
 	if (scene == "level7") {level=6;}
+
+	square.GetComponent.<SpriteRenderer>().color = sqColor; // Set to opaque blac
 
 
 	coinCount = 0;
