@@ -6,7 +6,7 @@ public var square : GameObject;
 
 function Start () 
 {
-
+	
 }
 
 function Update () 
@@ -27,7 +27,8 @@ function OnTriggerEnter2D (hit : Collider2D)
 	else if (hit.gameObject.tag == "enemy")
 	{
 		Destroy(coin);
-		hit.gameObject.SendMessage("AddEnemyMoney", 1);
+		square = GameObject.Find("Square");
+		square.SendMessage("AddEnemyMoney", 1);
 	}
 }
 

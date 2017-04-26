@@ -28,6 +28,7 @@ var countMoney : String;
 var enemyCoins: int = 0;
 var gui_money:UI.Text;
 public var coinGoal : int;
+public var coinTotal : int;
 
 var style : GUIStyle;
 
@@ -67,8 +68,11 @@ function Start () {
 	if (scene == "level5") {level=4;}
 	if (scene == "level6") {level=5;}
 	if (scene == "level7") {level=6;}
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 	coinCount = 0;
 }
 
@@ -165,10 +169,9 @@ function AddMoney(amount : int) {
 		gui_money.text = "Coins: " + coinCount.ToString();
 		if (coinCount >= coinGoal)
 		{
-			print("poop");
 			win = true;
 		}
-		else if (coinCount + enemyCoins == coinGoal)
+		else if (coinTotal - enemyCoins < coinGoal)
 		{
 			lose = true;
 		}
@@ -178,6 +181,10 @@ function AddMoney(amount : int) {
 function AddEnemyMoney(amount : int)
 {
 	enemyCoins++;
+	if (coinTotal - enemyCoins < coinGoal)
+		{
+			lose = true;
+		}
 }
 
 function OnGUI ()
