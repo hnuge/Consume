@@ -105,19 +105,6 @@ function Update () {
 	if (started)
 	{
 		var move : Vector3 = transform.position;
-		rayVector.x = 1;
-		rayVector.y = 0;
-		pos.x = transform.position.x;
-		pos.y = transform.position.y;
-		raysResults = Physics2D.Raycast(pos, rayVector, 0.1, 8, -1, 1);
-		print(mask);
-		if (raysResults.collider != null)
-		{
-			//print("yo");
-			var distance = Mathf.Abs(raysResults.point.x - transform.position.x);
-			print(raysResults.point);
-		}
-
 		count++;
 		if(count >= 2)
 		{
