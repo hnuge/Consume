@@ -43,6 +43,11 @@ var started:boolean;
 //var song:AudioClip;
 //var aud:AudioSource;
 
+var raysResults : RaycastHit2D;
+var rayVector : Vector2;
+private var myCollider2D : Collider2D;
+var pos : Vector2;
+
 function Start () {
 	started = false;
 	//levArr = new List.<String>();
@@ -69,7 +74,12 @@ function Start () {
 	if (scene == "level6") {level=5;}
 	if (scene == "level7") {level=6;}
 
+
 	coinCount = 0;
+	coinCount = 0;
+	print(LayerMask.LayerToName(8));
+
+	myCollider2D = GetComponent.<Collider2D>();
 }
 
 function Update () {
@@ -78,6 +88,18 @@ function Update () {
 		Square moves exactly one length of itself
 	-----------------------------------------*/
 	var move : Vector3 = transform.position;
+	rayVector.x = 1;
+	rayVector.y = 0;
+	pos.x = transform.position.x;
+	pos.y = transform.position.y;
+	raysResults = Physics2D.Raycast(pos, rayVector, 0.1, 8, -1, 1);
+	if (raysResults.collider != null)
+	{
+		//print("yo");
+		var distance = Mathf.Abs(raysResults.point.x - transform.position.x);
+		print(distance);
+	}
+
 
 	count++;
 	if(count >= 7)
@@ -148,7 +170,6 @@ function OnCollisionEnter2D(coll : Collision2D)
 
 	if (coll.gameObject.tag == "wall")
 	{
-		print("hit wall");
 	}
 
 }

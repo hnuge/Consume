@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 50564107862355540}
   - component: {fileID: 61335576889573238}
   - component: {fileID: 82945404321371716}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Square
   m_TagString: player_square
   m_Icon: {fileID: 0}
@@ -307,11 +307,12 @@ MonoBehaviour:
   downWall: -9.5
   columns: 16
   rows: 10
-  coinCount: 89
+  coinCount: 0
   countMoney: 'Coins: 0'
   enemyCoins: 0
   gui_money: {fileID: 0}
   coinGoal: 10
+  coinTotal: 0
   style:
     m_Name: 
     m_Normal:
@@ -384,6 +385,8 @@ MonoBehaviour:
   level: 0
   scene: 
   started: 0
+  rayVector: {x: 0, y: 0}
+  pos: {x: 0, y: 0}
 --- !u!212 &212958574227105940
 SpriteRenderer:
   m_ObjectHideFlags: 1
