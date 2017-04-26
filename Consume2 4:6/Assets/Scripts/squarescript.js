@@ -59,6 +59,13 @@ var collectScript : collector;
 //var colorObj : GameObject;
 //var colorScript : pickcolor;
 
+//sounds
+var winSound:AudioClip;
+var loseSound:AudioClip;
+var coinSound:AudioClip;
+var aud:AudioSource;
+
+
 var sqColor : Color;
 
 function Start () {
@@ -212,14 +219,19 @@ function AddMoney(amount : int) {
 //	}
 //	else {
 		coinCount++;
+		aud.PlayOneShot(coinSound);
 		gui_money.text = "Coins to win: " + (coinGoal-coinCount).ToString();
 		if (coinCount >= coinGoal)
 		{
+			aud.PlayOneShot(winSound);
+
 			win = true;
 			started = false;
 		}
 		else if (coinTotal - enemyCoins < coinGoal)
 		{
+			aud.PlayOneShot(loseSound);
+
 			lose = true;
 			started = false;
 		}

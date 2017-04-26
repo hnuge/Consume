@@ -461,6 +461,10 @@ MonoBehaviour:
   enemyScript: {fileID: 0}
   collectObj: {fileID: 0}
   collectScript: {fileID: 0}
+  winSound: {fileID: 8300000, guid: 1e3b1ee977c814dcf9081f09f37374f0, type: 3}
+  loseSound: {fileID: 8300000, guid: 66f3c0f114b80469584b667a1260fe03, type: 3}
+  coinSound: {fileID: 8300000, guid: 2d737f081b6b44cb29e3e9bf6834e37f, type: 3}
+  aud: {fileID: 82945404321371716}
   sqColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!212 &212958574227105940
 SpriteRenderer:
