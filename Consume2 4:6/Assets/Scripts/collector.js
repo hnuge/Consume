@@ -2,6 +2,8 @@
 
 var enemy : GameObject;
 var count:int;
+var r : float;
+var move : int;
 
 var paused : boolean;
 
@@ -14,10 +16,10 @@ function Update () {
 	if (!paused)
 	{
 		count++;
-		if (count ==30)
+		if (count ==8)
 		{
-			var xCo = 1;
-			var yCo = 1;
+			var xCo = .25;
+			var yCo = .25;
 			var coins = GameObject.FindGameObjectsWithTag("coin");
 			var dist = Number.PositiveInfinity;
 			for (var c = 0; c < coins.length; c++){
@@ -32,21 +34,48 @@ function Update () {
 			}
 			if (transform.position.x >coinX)
 			{
-				xCo = -1;
+				xCo = -.25;
 			}
 			if (transform.position.y >coinY)
 			{
-				yCo = -1;
+				yCo = -.25;
 			}
 			if (Mathf.Abs(coinX-transform.position.x) > Mathf.Abs(coinY-transform.position.y))
 			{
-				transform.position.x += xCo;
+				if (move == 0 && r != transform.position.x)
+				{
+					move = 1;
+					transform.position.y += -.25;
+				}
+				else
+				{
+					move = 0;
+					transform.position.x += xCo;
+					r = transform.position.x;
+				}
 			}
 			else
 			{
-				transform.position.y += yCo;
+				if (move == 1 && r != transform.position.y)
+				{
+					move = 0;
+					transform.position.x += -.25;
+				}
+				else
+				{
+					transform.position.y += yCo;
+				}
 			}
 			count = 0;
 		}
+	}
+}
+
+function OnCollisonEnter2D(hit : Collision2D)
+{
+	print("hit");
+	if (hit.gameObject.tag == "wall")
+	{
+		print("hit wall");
 	}
 }
