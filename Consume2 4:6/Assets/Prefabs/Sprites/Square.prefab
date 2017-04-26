@@ -368,7 +368,7 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 0}
-    m_FontSize: 0
+    m_FontSize: 20
     m_FontStyle: 0
     m_Alignment: 4
     m_WordWrap: 1
@@ -454,6 +454,9 @@ MonoBehaviour:
   started: 0
   rayVector: {x: 0, y: 0}
   pos: {x: 0, y: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
   enemyObj: {fileID: 0}
   enemyScript: {fileID: 0}
   collectObj: {fileID: 0}
