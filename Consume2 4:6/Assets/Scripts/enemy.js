@@ -6,6 +6,7 @@ var enemy : GameObject;
 var count:int;
 var r : float;
 var move : int = 2;
+var tried : boolean = false;
 
 var paused : boolean;
 
