@@ -34,7 +34,7 @@ function StartPrompt () {
 
 	if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2)/3, buttonW, buttonH), ""))
 	{
-		SceneManager.LoadScene("level1");
+		SceneManager.LoadScene("pickcolor");
 	}
 
 	GUI.skin.button = style2;
