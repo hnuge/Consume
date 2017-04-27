@@ -291,7 +291,7 @@ function OnGUI ()
 
     if (win)
 	{
-		if(level != "level7")
+		if(level != 6)
 		{
 			output = "You win! Click here to proceed to the next level :D";
 		}
@@ -303,7 +303,7 @@ function OnGUI ()
 		GUI.skin.button = style;
         collectScript.paused = true;
         enemyScript.paused = true;
-        if (level != "level7")
+        if (level != 6)
         {
 			var nextLev:String = levArr[level+1];
 			if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
