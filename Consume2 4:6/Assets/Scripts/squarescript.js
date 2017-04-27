@@ -280,7 +280,7 @@ function OnGUI ()
     {
         collectScript.paused = true;
         enemyScript.paused = true;
-        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The brown square wants your coins. Beware!\n (Click to begin)"))
+        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The dark blue square wants your coins. Beware!\n (Click to begin)"))
         {
             started = true;
             collectScript.paused = false;
