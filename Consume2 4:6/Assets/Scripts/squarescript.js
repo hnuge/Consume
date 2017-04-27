@@ -297,19 +297,27 @@ function OnGUI ()
 
     if (win)
 	{
-		output = "You win! Click here to proceed to the next level :D";
+		if(level != "level7")
+		{
+			output = "You win! Click here to proceed to the next level :D";
+		}
+		else
+		{
+			output = "Congratulations!  You beat the game!";
+		}
 
 		GUI.skin.button = style;
         collectScript.paused = true;
         enemyScript.paused = true;
+        if (level != "level7")
+        {
+			var nextLev:String = levArr[level+1];
+			if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
+			{
+				SceneManager.LoadScene(nextLev);
 
-		var nextLev:String = levArr[level+1];
-		if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
-		{
-			SceneManager.LoadScene(nextLev);
-
+			}
 		}
-
 		GUI.skin.button = style2;
 		if (GUI.Button(Rect(halfPromptW-(80/2), halfPromptH-(80/2)/3+120, 80, 80), ""))
 		{
