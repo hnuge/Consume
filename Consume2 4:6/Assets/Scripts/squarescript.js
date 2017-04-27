@@ -312,6 +312,10 @@ function OnGUI ()
 
 			}
 		}
+		else
+		{
+			SceneManager.LoadScene("title");
+		}
 		GUI.skin.button = style2;
 		if (GUI.Button(Rect(halfPromptW-(80/2), halfPromptH-(80/2)/3+120, 80, 80), ""))
 		{
