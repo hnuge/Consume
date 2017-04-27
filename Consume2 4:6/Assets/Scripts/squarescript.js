@@ -213,29 +213,23 @@ function OnCollisionEnter2D(coll : Collision2D)
 
 
 function AddMoney(amount : int) {
-//	if (amount == 0){
-//		countMoney = "Coins to win: " + coinGoal.ToString();
-//		//gui_money.text = countMoney
-//	}
-//	else {
-		coinCount++;
-		aud.PlayOneShot(coinSound);
-		gui_money.text = "Coins to win: " + (coinGoal-coinCount).ToString();
-		if (coinCount >= coinGoal)
-		{
-			aud.PlayOneShot(winSound);
+	coinCount++;
+	//aud.PlayOneShot(coinSound);
+	gui_money.text = "Coins to win: " + (coinGoal-coinCount).ToString();
+	if (coinCount >= coinGoal)
+	{
+		aud.PlayOneShot(winSound);
 
-			win = true;
-			started = false;
-		}
-		else if (coinTotal - enemyCoins < coinGoal)
-		{
-			aud.PlayOneShot(loseSound);
+		win = true;
+		started = false;
+	}
+	else if (coinTotal - enemyCoins < coinGoal)
+	{
+		aud.PlayOneShot(loseSound);
 
-			lose = true;
-			started = false;
-		}
-//	}
+		lose = true;
+		started = false;
+	}
 }
 
 function AddEnemyMoney(amount : int)

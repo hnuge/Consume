@@ -2,6 +2,9 @@
 
 var coin : GameObject;
 
+var coinSound:AudioClip;
+var aud:AudioSource;
+
 public var square : GameObject;
 
 function Start () 
@@ -20,6 +23,7 @@ function OnTriggerEnter2D (hit : Collider2D)
 	
 	if (hit.gameObject.tag == "player_square")
 	{
+		aud.PlayOneShot(coinSound);
 		Destroy(coin);
 		hit.gameObject.SendMessage("AddMoney", 1);
 	}
