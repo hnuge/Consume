@@ -687,7 +687,7 @@ Prefab:
         type: 2}
       propertyPath: coinSound
       value: 
-      objectReference: {fileID: 8300000, guid: aeac892ed3f97419c8fc173a31d20e59, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114619401623129132, guid: 527c1bf798a3e42d1b51054bf2426d3e,
         type: 2}
       propertyPath: aud
@@ -789,94 +789,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
-      propertyPath: home
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
       propertyPath: ts
       value: 
       objectReference: {fileID: 1274508945}
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
-      propertyPath: bs
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 61335576889573238, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: startX
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: startY
-      value: -5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: rightWall
-      value: 15.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: leftWall
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: upWall
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: downWall
-      value: -9.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
       propertyPath: gui_money
       value: 
       objectReference: {fileID: 754315100}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: coinGoal
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style.m_Name
-      value: popup
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style.m_Normal.m_Background
-      value: 
-      objectReference: {fileID: 2800000, guid: a46e2169c73104d7cb3c9edd68722aaa, type: 3}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style.m_Alignment
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style.m_WordWrap
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: coinCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: coinTotal
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
         type: 2}
       propertyPath: enemyObj
@@ -887,21 +807,6 @@ Prefab:
       propertyPath: collectObj
       value: 
       objectReference: {fileID: 1197364702}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style2.m_Name
-      value: homebutton
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: style2.m_Normal.m_Background
-      value: 
-      objectReference: {fileID: 2800000, guid: e3c9aa4585988417ea2becab0ce1d9cc, type: 3}
-    - target: {fileID: 114905797495019848, guid: 66642eeb786c34c6fa5a0d5511eb85fd,
-        type: 2}
-      propertyPath: started
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66642eeb786c34c6fa5a0d5511eb85fd, type: 2}
   m_IsPrefabParent: 0

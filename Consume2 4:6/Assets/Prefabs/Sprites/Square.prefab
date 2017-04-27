@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1290430640078728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -1.5, z: 1}
+  m_LocalPosition: {x: 2.5, y: -5.5, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4118991384765804}
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -300,7 +300,7 @@ MonoBehaviour:
   count: 0
   ts: {fileID: 0}
   startX: 2.5
-  startY: -1.5
+  startY: -5.5
   rightWall: 15.5
   leftWall: 0.5
   upWall: -0.5
@@ -311,10 +311,10 @@ MonoBehaviour:
   countMoney: 'Coins: 0'
   enemyCoins: 0
   gui_money: {fileID: 0}
-  coinGoal: 9
+  coinGoal: 10
   coinTotal: 10
   style:
-    m_Name: 
+    m_Name: popup
     m_Normal:
       m_Background: {fileID: 2800000, guid: a46e2169c73104d7cb3c9edd68722aaa, type: 3}
       m_ScaledBackgrounds: []
@@ -381,7 +381,7 @@ MonoBehaviour:
     m_StretchWidth: 1
     m_StretchHeight: 0
   style2:
-    m_Name: 
+    m_Name: homebutton
     m_Normal:
       m_Background: {fileID: 2800000, guid: e3c9aa4585988417ea2becab0ce1d9cc, type: 3}
       m_ScaledBackgrounds: []
@@ -461,7 +461,7 @@ MonoBehaviour:
   enemyScript: {fileID: 0}
   collectObj: {fileID: 0}
   collectScript: {fileID: 0}
-  winSound: {fileID: 8300000, guid: 1e3b1ee977c814dcf9081f09f37374f0, type: 3}
+  winSound: {fileID: 8300000, guid: 3b3735b1134034f4a99ab943db132925, type: 3}
   loseSound: {fileID: 8300000, guid: 66f3c0f114b80469584b667a1260fe03, type: 3}
   coinSound: {fileID: 8300000, guid: 2d737f081b6b44cb29e3e9bf6834e37f, type: 3}
   aud: {fileID: 82945404321371716}
