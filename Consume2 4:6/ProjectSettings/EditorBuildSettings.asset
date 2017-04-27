@@ -29,3 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/pickcolor.unity
     guid: cd833d176d2ef44dd91f3bb4d0f05d55
+  - enabled: 1
+    path: Assets/Levels/level5.unity
+    guid: ed0522dd5e00540ea9b35575baf6cfb7
+  - enabled: 1
+    path: Assets/Levels/level6.unity
+    guid: 6a1924a22c49d415abd10db079f685dc
+  - enabled: 1
+    path: Assets/Levels/level7.unity
+    guid: 891075b79ea44431abc92ea2fd787b1d
