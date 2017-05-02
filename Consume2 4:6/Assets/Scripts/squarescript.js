@@ -73,7 +73,7 @@ function Start () {
 	gui_money.text = "Coins to win: " + (coinGoal).ToString();
 
 	//levArr = new List.<String>();
-	levArr = ["level1","level2","level3","level4","level5","level6","level7"];
+	levArr = ["level1","level2","level3","level4","level5","level6","level7", "level8", "level9", "level10"];
 
 	currKey = "start";
 	count = 0;
@@ -269,7 +269,7 @@ function OnGUI ()
     if (level == 1 && !started) //level 2 popup
     {
         enemyScript.paused = true;
-        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The red square is trying to chase you! If you get hit, you'll be sent back to base\n (Click to begin)"))
+        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The red square is trying to chase you!\nIf you get hit, you'll be sent back to base.\nIt can also take your coins.\n (Click to begin)"))
         {
             started = true;
             enemyScript.paused = false;
@@ -280,7 +280,7 @@ function OnGUI ()
     {
         collectScript.paused = true;
         enemyScript.paused = true;
-        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The dark blue square wants your coins. Beware!\n (Click to begin)"))
+        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The dark blue square wants your coins and will send you home if it catches you. Beware!\n (Click to begin)"))
         {
             started = true;
             collectScript.paused = false;
@@ -293,11 +293,11 @@ function OnGUI ()
 	{
 		if(level != 6)
 		{
-			output = "You win! Click here to proceed to the next level :D";
+			output = "You win! \nClick here to proceed to the next level :D";
 		}
 		else
 		{
-			output = "Congratulations!  You beat the game! Click to go home";
+			output = "Congratulations!\nYou beat the game!\nClick to go home";
 		}
 
 		GUI.skin.button = style;
