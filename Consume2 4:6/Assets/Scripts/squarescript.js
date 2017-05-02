@@ -328,7 +328,7 @@ function OnGUI ()
 	{
 		enemyScript.paused = true;
 		collectScript.paused = true;
-		output = "You lose :( Click to try again.";
+		output = "There aren't enough coins left for you\nto win, so you lose :( \n Click to try again.";
 
 		GUI.skin.button = style;
 
