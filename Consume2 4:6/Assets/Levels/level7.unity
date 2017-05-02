@@ -309,7 +309,7 @@ Prefab:
     - target: {fileID: 224723385862000618, guid: f581fb714f25944aa98b58485250005f,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f581fb714f25944aa98b58485250005f, type: 2}
@@ -469,7 +469,7 @@ Prefab:
     - target: {fileID: 224723385862000618, guid: f581fb714f25944aa98b58485250005f,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f581fb714f25944aa98b58485250005f, type: 2}
@@ -579,7 +579,7 @@ Prefab:
     - target: {fileID: 224723385862000618, guid: f581fb714f25944aa98b58485250005f,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f581fb714f25944aa98b58485250005f, type: 2}
@@ -643,7 +643,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4723654561825860, guid: fc950932ecacd4f0fbe113ccb2a82fa1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4723654561825860, guid: fc950932ecacd4f0fbe113ccb2a82fa1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -801,7 +801,7 @@ Prefab:
     - target: {fileID: 224723385862000618, guid: f581fb714f25944aa98b58485250005f,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780646877031034, guid: f581fb714f25944aa98b58485250005f, type: 2}
       propertyPath: m_Name
@@ -1601,6 +1601,11 @@ Prefab:
       propertyPath: m_Name
       value: Obstacle (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 224723385862000618, guid: f581fb714f25944aa98b58485250005f,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f581fb714f25944aa98b58485250005f, type: 2}
   m_IsPrefabParent: 0
@@ -1713,7 +1718,7 @@ Prefab:
     - target: {fileID: 224723385862000618, guid: f581fb714f25944aa98b58485250005f,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f581fb714f25944aa98b58485250005f, type: 2}
@@ -1971,7 +1976,7 @@ Prefab:
     - target: {fileID: 224723385862000618, guid: f581fb714f25944aa98b58485250005f,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f581fb714f25944aa98b58485250005f, type: 2}
@@ -2143,6 +2148,11 @@ Prefab:
     - target: {fileID: 1780646877031034, guid: f581fb714f25944aa98b58485250005f, type: 2}
       propertyPath: m_Name
       value: Obstacle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 224723385862000618, guid: f581fb714f25944aa98b58485250005f,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f581fb714f25944aa98b58485250005f, type: 2}
