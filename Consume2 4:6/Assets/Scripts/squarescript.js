@@ -297,7 +297,7 @@ function OnGUI ()
 		}
 		else
 		{
-			output = "Congratulations!  You beat the game!";
+			output = "Congratulations!  You beat the game! Click to go home";
 		}
 
 		GUI.skin.button = style;
@@ -314,8 +314,11 @@ function OnGUI ()
 		}
 		else
 		{
-			SceneManager.LoadScene("title");
-		}
+			if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
+			{
+				SceneManager.LoadScene("title");
+
+			}		}
 		GUI.skin.button = style2;
 		if (GUI.Button(Rect(halfPromptW-(80/2), halfPromptH-(80/2)/3+120, 80, 80), ""))
 		{
