@@ -96,6 +96,9 @@ function Start () {
 	if (scene == "level5") {level=4;}
 	if (scene == "level6") {level=5;}
 	if (scene == "level7") {level=6;}
+	if (scene == "level8") {level=7;}
+	if (scene == "level9") {level=8;}
+	if (scene == "level10") {level=9;}
 
 	square.GetComponent.<SpriteRenderer>().color = sqColor; // Set to opaque blac
 
