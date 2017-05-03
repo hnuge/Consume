@@ -85,7 +85,7 @@ function Start () {
 	win = false;
 	lose = false;
 	//words = new List.<GameObject>();
-	sqColor = savecolor.sqColor;
+	if (savecolor.sqColor != null)	{sqColor = savecolor.sqColor;}
 
 
 	scene = SceneManager.GetActiveScene().name; //get current scene
