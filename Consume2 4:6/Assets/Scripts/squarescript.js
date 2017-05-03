@@ -73,7 +73,7 @@ function Start () {
 	gui_money.text = "Coins to win: " + (coinGoal).ToString();
 
 	//levArr = new List.<String>();
-	levArr = ["level1","level2","level3","level4","level5","level6","level7", "level8", "level9", "level10"];
+	levArr = ["level1","level2","level3","level4","level5","level6","level7", "level8", "level9"];
 
 	currKey = "start";
 	count = 0;
@@ -283,7 +283,7 @@ function OnGUI ()
     {
         collectScript.paused = true;
         enemyScript.paused = true;
-        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The dark blue square wants your coins and will send you home if it catches you. Beware!\n (Click to begin)"))
+        if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), "The dark blue square wants your coins\nand will send you home if it catches you.\n Beware!\n (Click to begin)"))
         {
             started = true;
             collectScript.paused = false;
@@ -294,7 +294,7 @@ function OnGUI ()
 
     if (win)
 	{
-		if(level != 9)
+		if(level != 8)
 		{
 			output = "You win! \nClick here to proceed to the next level :D";
 		}
@@ -306,7 +306,7 @@ function OnGUI ()
 		GUI.skin.button = style;
         collectScript.paused = true;
         enemyScript.paused = true;
-        if (level != 9)
+        if (level != 8)
         {
 			var nextLev:String = levArr[level+1];
 			if (GUI.Button(Rect(halfPromptW-(buttonW/2), halfPromptH-(buttonH/2), buttonW, buttonH), output))
